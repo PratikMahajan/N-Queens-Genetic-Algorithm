@@ -12,11 +12,30 @@ public class Chromosome {
     
     private int MAX_LENGTH;
     private int[] gene ;
-    private int fitness;
+    private double fitness;
     private int conflicts;
     private boolean selected;
     private double selectionProb;
 
+    
+    public Chromosome(int maxLen){
+        MAX_LENGTH= maxLen;
+        gene = new int[MAX_LENGTH];
+        conflicts= 0;
+        fitness = 0.0;
+        selected= false;
+        selectionProb= 0.0;
+        initChromosome();
+    }
+    
+    
+    public void initChromosome(){
+	for(int i = 0; i < MAX_LENGTH; i++){
+            this.gene[i] = i;
+            }
+    }
+
+    
     public int[] getGene() {
         return gene;
     }
@@ -25,7 +44,7 @@ public class Chromosome {
         this.gene = gene;
     }
 
-    public int getFitness() {
+    public double getFitness() {
         return fitness;
     }
 
@@ -56,8 +75,6 @@ public class Chromosome {
     public void setSelectionProb(double selectionProb) {
         this.selectionProb = selectionProb;
     }
-    
-    
     
     
     
