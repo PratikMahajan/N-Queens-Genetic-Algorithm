@@ -16,7 +16,11 @@ public class Chromosome {
     private int conflicts;
     private boolean selected;
     private double selectionProb;
-
+    
+    
+//------------------------------------------------------
+//    Initializing Chromosome
+//------------------------------------------------------
     
     public Chromosome(int maxLen){
         MAX_LENGTH= maxLen;
@@ -80,12 +84,51 @@ public class Chromosome {
     }
     
 //------------------------------------------------------ 
+//    Compute conflict to calculate fitness
 //------------------------------------------------------
     
     
+    public void computeConflict(){
+        String [][]board = new String[MAX_LENGTH][MAX_LENGTH]; //Initializing the board
+        int row=0;
+        int column= 0;
+        int temp_row=0;
+        int temp_column=0;
+        
+        //arrays to check diagonals
+        int []diag_x = new int[]{-1,1,-1,1};
+        int []diag_y = new int[]{-1,1,1,-1};
+        
+        
+        boolean stop= false;
+        int conflicts=0;
+        
+        
+        
+        
+        
+    }
     
     
+//------------------------------------------------------ 
+//    Clear Board into Empty array
+//------------------------------------------------------   
+    public void emptyBoard(String[][] board){
+        
+        board= new String[MAX_LENGTH][MAX_LENGTH];
+        
+    }
     
+
+//------------------------------------------------------ 
+//    Plot Queens on the board
+//------------------------------------------------------  
+    
+    public void getQueens(String[][] board){
+        for(int i =0; i< MAX_LENGTH; i++){
+            board[i][gene[i]]="*";
+        }
+    }
     
     
 }
