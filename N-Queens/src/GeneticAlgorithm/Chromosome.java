@@ -101,12 +101,50 @@ public class Chromosome {
         
         
         boolean stop= false;
-        int conflicts=0;
+        int conflict=0;
+        
+        emptyBoard(board);
+        markQueens(board);
+        
+        // Check every queen if there is conflict with another queen
+        // j is the directions for searching diagonally if any queen is in path 
+        for(int i=0; i< MAX_LENGTH; i++){
+            row =i;
+            column= gene[i];
+            
+            for(int j=0; j<4; j++){
+                
+                temp_row= row;
+                temp_column= column;
+                stop= false; //Stopping condition at the end of the board
+                
+                while(!stop){
+                    temp_row+=diag_x[j];
+                    temp_column+=diag_y[j];
+                    
+                    if((temp_row < 0 || temp_row >= MAX_LENGTH) || (temp_column < 0 || temp_column >= MAX_LENGTH)){
+                        stop= true;
+                        // Board out of bounds, stop this iteration
+                    }
+                    else{
+                        if ( board[temp_row][temp_column].equals("*")){
+                            conflict+=1;
+                            // Another queen in path, thus invalid, causing conflict
+                        }
+                    }
+                    
+                }
+                
+                 
+                
+            }
+            
+            
+            
+        }
         
         
-        
-        
-        
+        this.conflicts= conflict;
     }
     
     
@@ -124,7 +162,7 @@ public class Chromosome {
 //    Plot Queens on the board
 //------------------------------------------------------  
     
-    public void getQueens(String[][] board){
+    public void markQueens(String[][] board){
         for(int i =0; i< MAX_LENGTH; i++){
             board[i][gene[i]]="*";
         }
