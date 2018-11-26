@@ -35,6 +35,9 @@ public class Chromosome {
             }
     }
 
+//------------------------------------------------------
+//    Getters and Setters 
+//------------------------------------------------------
     
     public int[] getGene() {
         return gene;
@@ -75,6 +78,13 @@ public class Chromosome {
     public void setSelectionProb(double selectionProb) {
         this.selectionProb = selectionProb;
     }
+    
+//------------------------------------------------------ 
+//------------------------------------------------------
+    
+    
+    
+    
     
     
     
