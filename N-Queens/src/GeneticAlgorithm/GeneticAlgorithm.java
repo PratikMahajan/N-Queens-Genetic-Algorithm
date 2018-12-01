@@ -54,10 +54,178 @@ public class GeneticAlgorithm {
 		populationSize = 0;
 	}
     
+        public int generateRandomNumber(int low, int high) {
+   		return (int)Math.round((high - low) * rand.nextDouble() + low);
+	}
+        
+        public int noRepeteRandom(int high, int reject){
+            boolean stop = false;
+            int random = 0;
+
+            while(!stop) {
+                    random = rand.nextInt(high);
+                    if(random != reject){
+                            stop = true;
+                    }
+            }
+            return random; 
+        }
+
+        
+    //-----------------------------------------
+    //getters and setters
+    //-----------------------------------------
         
         
+        public int getNextMutation() {
+            return nextMutation;
+        }
+
+        public void setNextMutation(int nextMutation) {
+            this.nextMutation = nextMutation;
+        }
+
+        public ArrayList<Chromosome> getPopulation() {
+            return population;
+        }
+
+        public void setPopulation(ArrayList<Chromosome> population) {
+            this.population = population;
+        }
+
+        public ArrayList<Chromosome> getSolutions() {
+            return solutions;
+        }
+
+        public void setSolutions(ArrayList<Chromosome> solutions) {
+            this.solutions = solutions;
+        }
+
+        public Random getRand() {
+            return rand;
+        }
+
+        public void setRand(Random rand) {
+            this.rand = rand;
+        }
+
+        public int getChildCount() {
+            return childCount;
+        }
+
+        public void setChildCount(int childCount) {
+            this.childCount = childCount;
+        }
+
+        public int getMutations() {
+            return mutations;
+        }
+
+        public void setMutations(int mutations) {
+            this.mutations = mutations;
+        }
+
+        public int getEpoch() {
+            return epoch;
+        }
+
+        public void setEpoch(int epoch) {
+            this.epoch = epoch;
+        }
+
+        public int getPopulationSize() {
+            return populationSize;
+        }
+
+        public void setPopulationSize(int populationSize) {
+            this.populationSize = populationSize;
+        }
+
         
-        
+        public double getMATING_PROBABILITY() {
+        return MATING_PROBABILITY;
+        }
+
+        public void setMATING_PROBABILITY(double MATING_PROBABILITY) {
+            this.MATING_PROBABILITY = MATING_PROBABILITY;
+        }
+
+        public double getMUTATION_RATE() {
+            return MUTATION_RATE;
+        }
+
+        public void setMUTATION_RATE(double MUTATION_RATE) {
+            this.MUTATION_RATE = MUTATION_RATE;
+        }
+
+        public int getMAX_LENGTH() {
+            return MAX_LENGTH;
+        }
+
+        public void setMAX_LENGTH(int MAX_LENGTH) {
+            this.MAX_LENGTH = MAX_LENGTH;
+        }
+
+        public int getSTART_SIZE() {
+            return START_SIZE;
+        }
+
+        public void setSTART_SIZE(int START_SIZE) {
+            this.START_SIZE = START_SIZE;
+        }
+
+        public int getMAX_EPOCHS() {
+            return MAX_EPOCHS;
+        }
+
+        public void setMAX_EPOCHS(int MAX_EPOCHS) {
+            this.MAX_EPOCHS = MAX_EPOCHS;
+        }
+
+        public int getMIN_SELECT() {
+            return MIN_SELECT;
+        }
+
+        public void setMIN_SELECT(int MIN_SELECT) {
+            this.MIN_SELECT = MIN_SELECT;
+        }
+
+        public int getMAX_SELECT() {
+            return MAX_SELECT;
+        }
+
+        public void setMAX_SELECT(int MAX_SELECT) {
+            this.MAX_SELECT = MAX_SELECT;
+        }
+
+        public int getOFFSPRING_PER_GENERATION() {
+            return OFFSPRING_PER_GENERATION;
+        }
+
+        public void setOFFSPRING_PER_GENERATION(int OFFSPRING_PER_GENERATION) {
+            this.OFFSPRING_PER_GENERATION = OFFSPRING_PER_GENERATION;
+        }
+
+        public int getMINIMUM_SHUFFLES() {
+            return MINIMUM_SHUFFLES;
+        }
+
+        public void setMINIMUM_SHUFFLES(int MINIMUM_SHUFFLES) {
+            this.MINIMUM_SHUFFLES = MINIMUM_SHUFFLES;
+        }
+
+        public int getMAXIMUM_SHUFFLES() {
+            return MAXIMUM_SHUFFLES;
+        }
+
+        public void setMAXIMUM_SHUFFLES(int MAXIMUM_SHUFFLES) {
+            this.MAXIMUM_SHUFFLES = MAXIMUM_SHUFFLES;
+        }
+
+  
+
+    //-------------------------------------------------
+    //-------------------------------------------------
         
         
         
