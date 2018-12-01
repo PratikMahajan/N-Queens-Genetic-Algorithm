@@ -54,6 +54,10 @@ public class GeneticAlgorithm {
 		populationSize = 0;
 	}
     
+        
+    //----------------------------------------------------
+    // Random Number Generation
+    //----------------------------------------------------
         public int generateRandomNumber(int low, int high) {
    		return (int)Math.round((high - low) * rand.nextDouble() + low);
 	}
@@ -70,7 +74,55 @@ public class GeneticAlgorithm {
             }
             return random; 
         }
+    //----------------------------------------------------
+    //Initialize queens in random position
+    //----------------------------------------------------     
+        
+        public void initializeQueens() {
+		int shuffles = 0;
+		Chromosome chromo = null;
+		int index = 0;
 
+		for(int i = 0; i < START_SIZE; i++)  {
+			chromo = new Chromosome(MAX_LENGTH);
+			population.add(chromo);
+			index = population.indexOf(chromo);
+
+	
+			shuffles = generateRandomNumber(MINIMUM_SHUFFLES, MAXIMUM_SHUFFLES);
+			exchangeMutation(index, shuffles);
+			population.get(index).computeConflict();
+		}
+	}
+        
+        public void exchangeMutation(int index, int exchanges) {
+		int tmp = 0;
+		int g1 = 0;
+		int g2 = 0;
+		Chromosome chromo = null;
+		chromo = population.get(index);
+
+		for(int i = 0; i < exchanges; i++) {
+			g1 = generateRandomNumber(0, MAX_LENGTH - 1);
+			g2 = noRepeteRandom(MAX_LENGTH - 1, g1);
+
+			// Exchange genes.
+			tmp = chromo.getGene(g1);
+			chromo.setGene(g1, chromo.getGene(g2));
+			chromo.setGene(g2, tmp);
+		}
+		mutations++;
+	}
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
         
     //-----------------------------------------
     //getters and setters
