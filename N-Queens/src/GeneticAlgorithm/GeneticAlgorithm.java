@@ -135,6 +135,27 @@ public class GeneticAlgorithm {
 		mutations++;
 	}
         
+      //----------------------------------------------------
+    // Get Fitness 
+    //----------------------------------------------------
+        
+     
+    public void getFitness() {
+            // min 0% and max 100%
+            int populationSize = population.size();
+            Chromosome chromo = null;
+            double best = 0;
+            double worst = 0;
+
+            worst = Collections.max(population).getConflicts();
+
+            best = worst - Collections.min(population).getConflicts();
+
+            for(int i = 0; i < populationSize; i++) {
+                    chromo = population.get(i);
+                    chromo.setFitness((worst - chromo.getConflicts()) * 100.0 / best);
+            }   
+    }
 
   
     //-----------------------------------------
