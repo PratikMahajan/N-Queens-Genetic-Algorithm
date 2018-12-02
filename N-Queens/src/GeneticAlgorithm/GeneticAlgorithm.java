@@ -165,7 +165,7 @@ public class GeneticAlgorithm {
             // Randomly choose an eligible parent.
              parent = generateRandomNumber(0, population.size() - 1);
             if(parent != parentA){
-   //             chromo = population.get(parent);
+                chromo = population.get(parent);
                 if(chromo.isSelected() == true){
                     stop = true;
                 }
