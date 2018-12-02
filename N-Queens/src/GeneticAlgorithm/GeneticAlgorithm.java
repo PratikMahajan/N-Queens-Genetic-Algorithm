@@ -157,7 +157,61 @@ public class GeneticAlgorithm {
             }   
     }
 
-  
+   
+    //----------------------------------------------------
+    // Roulette Selection
+    // https://stackoverflow.com/questions/298301/roulette-wheel-selection-algorithm
+    // https://stackoverflow.com/questions/177271/roulette-selection-in-genetic-algorithms
+    //----------------------------------------------------
+    //
+    public void rouletteSelection() {
+        int populationSize = population.size();
+        int maximumToSelect = generateRandomNumber(MIN_SELECT, MAX_SELECT);
+        double genTotal = 0.0;
+        double selTotal = 0.0;
+        double rouletteSpin = 0.0;
+        Chromosome chromo = null;
+        Chromosome otherChromo = null;
+        boolean stop = false;
+        int j = 0;
+        
+        for(int i = 0; i < populationSize; i++) {												//get total fitness
+            chromo = population.get(i);
+            genTotal += chromo.getFitness();
+        }
+        
+        genTotal *= 0.01;															
+
+        for(int i = 0; i < populationSize; i++) {
+            chromo = population.get(i);
+            chromo.setSelectionProb(chromo.getFitness() / genTotal);		//set selection probability. the more fit the better selection probability
+        }
+        
+        for(int i = 0; i < maximumToSelect; i++) {										//selects parents
+            rouletteSpin = generateRandomNumber(0, 99);
+            j = 0;
+            selTotal = 0;
+            stop = false;
+            while(!stop) {
+                chromo = population.get(j);
+                selTotal += chromo.getSelectionProb();
+                if(selTotal >= rouletteSpin) {
+					 if(j == 0) {
+					    otherChromo = population.get(j);
+					 } else if(j >= populationSize - 1) {
+					     otherChromo = population.get(populationSize - 1);
+					 } else {
+					     otherChromo = population.get(j-1);
+					 }
+					otherChromo.setSelected(true);
+					stop = true;
+                } else {
+                    j++;
+                }
+            }
+        }
+    }
+
     //-----------------------------------------
     //getters and setters
     //-----------------------------------------
