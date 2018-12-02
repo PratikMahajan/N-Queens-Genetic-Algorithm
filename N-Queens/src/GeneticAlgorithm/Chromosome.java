@@ -8,7 +8,7 @@ package GeneticAlgorithm;
  *
  * @author mahajan
  */
-public class Chromosome {
+public class Chromosome implements Comparable<Chromosome>{
     
     private int MAX_LENGTH;
     private int[] gene ;
@@ -39,6 +39,13 @@ public class Chromosome {
             }
     }
 
+    
+    
+    
+    
+    
+    
+    
 //------------------------------------------------------
 //    Getters and Setters 
 //------------------------------------------------------
@@ -46,16 +53,24 @@ public class Chromosome {
     public int[] getGene() {
         return gene;
     }
+    
+    public int getGene(int index) {
+	return gene[index];
+    }
 
     public void setGene(int[] gene) {
         this.gene = gene;
+    }
+    
+    public void setGene(int index, int position) {
+        this.gene[index] = position;
     }
 
     public double getFitness() {
         return fitness;
     }
 
-    public void setFitness(int fitness) {
+    public void setFitness(double fitness) {
         this.fitness = fitness;
     }
 
@@ -83,10 +98,35 @@ public class Chromosome {
         this.selectionProb = selectionProb;
     }
     
+    
+    
+     
+//------------------------------------------------------ 
+//    Clear Board into Empty array
+//------------------------------------------------------   
+    
+    public void emptyBoard(String[][] board){
+        
+        board= new String[MAX_LENGTH][MAX_LENGTH];
+        
+    }
+    
+
+//------------------------------------------------------ 
+//    Plot Queens on the board
+//------------------------------------------------------  
+    
+    public void markQueens(String[][] board){
+        for(int i =0; i< MAX_LENGTH; i++){
+            board[i][gene[i]]="*";
+        }
+    }
+    
+    
+    
 //------------------------------------------------------ 
 //    Compute conflict to calculate fitness
 //------------------------------------------------------
-    
     
     public void computeConflict(){
         String [][]board = new String[MAX_LENGTH][MAX_LENGTH]; //Initializing the board
@@ -131,42 +171,21 @@ public class Chromosome {
                             conflict+=1;
                             // Another queen in path, thus invalid, causing conflict
                         }
-                    }
-                    
-                }
-                
-                 
-                
-            }
-            
-            
-            
+                    } 
+                }  
+            }  
         }
-        
-        
+       
         this.conflicts= conflict;
     }
     
+  
     
-//------------------------------------------------------ 
-//    Clear Board into Empty array
-//------------------------------------------------------   
-    public void emptyBoard(String[][] board){
-        
-        board= new String[MAX_LENGTH][MAX_LENGTH];
-        
-    }
+    public int compareTo(Chromosome chromo) {
+		return this.conflicts - chromo.getConflicts();
+	}
     
-
-//------------------------------------------------------ 
-//    Plot Queens on the board
-//------------------------------------------------------  
     
-    public void markQueens(String[][] board){
-        for(int i =0; i< MAX_LENGTH; i++){
-            board[i][gene[i]]="*";
-        }
-    }
     
     
 }
