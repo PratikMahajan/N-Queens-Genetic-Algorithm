@@ -139,6 +139,22 @@ public class GeneticAlgorithm {
   //----------------------------------------------------
     // Parent Selection
     //----------------------------------------------------
+        
+        public int chooseParent() {
+        int parent = 0;
+        Chromosome chromo = null;
+        boolean stop = false;
+
+        while(!stop) {
+            parent = generateRandomNumber(0, population.size() - 1);
+            chromo = population.get(parent);
+            if(chromo.isSelected() == true) {
+                stop = true;
+            }
+        }
+
+        return parent;    	
+    }   
     //-----------------------------------------
     //getters and setters
     //-----------------------------------------
