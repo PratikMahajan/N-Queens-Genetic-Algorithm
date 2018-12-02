@@ -155,6 +155,25 @@ public class GeneticAlgorithm {
 
         return parent;    	
     }   
+        
+          public int chooseParent(int parentA) {
+        int parent = 0;
+        Chromosome chromo = null;
+        boolean stop = false;
+
+//        while(!stop) {
+//            // Randomly choose an eligible parent.
+//             parent = generateRandomNumber(0, population.size() - 1);
+//            if(parent != parentA){
+//                chromo = population.get(parent);
+//                if(chromo.isSelected() == true){
+//                    stop = true;
+//                }
+//            }
+//        }
+//
+        return parent;    	
+    } 
     //-----------------------------------------
     //getters and setters
     //-----------------------------------------
