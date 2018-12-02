@@ -218,6 +218,69 @@ public class GeneticAlgorithm {
     // https://stackoverflow.com/questions/52350699/how-to-perform-partially-mapped-crossover-operator-pmx
     //----------------------------------------------------
     
+    public void partiallyMappedCrossover(int chromA, int chromB, int child1, int child2) {
+        int j = 0;
+        int obj1 = 0;
+        int obj2 = 0;
+        int ind1 = 0;
+        int ind2 = 0;
+        Chromosome chromo1 = population.get(chromA);
+        Chromosome chromo2 = population.get(chromB);
+        Chromosome childChromo1 = population.get(child1);
+        Chromosome childChromo2 = population.get(child2);
+        int crossPoint1 = generateRandomNumber(0, MAX_LENGTH - 1);
+        int crossPoint2 = noRepeteRandom(MAX_LENGTH - 1, crossPoint1);
+        
+        //gets the crosspoint from where to swap
+        if(crossPoint2 < crossPoint1) {
+            j = crossPoint1;
+            crossPoint1 = crossPoint2;
+            crossPoint2 = j;
+        }
+
+        // Copy Parent genes to offspring.
+        for(int i = 0; i < MAX_LENGTH; i++) {
+            childChromo1.setGene(i, chromo1.getGene(i));
+            childChromo2.setGene(i, chromo2.getGene(i));
+        }
+
+        for(int i = crossPoint1; i <= crossPoint2; i++) {
+            // Get the two items to swap.
+            obj1 = chromo1.getGene(i);
+            obj2 = chromo2.getGene(i);
+
+            // Get the items//  positions in the offspring.
+            for(j = 0; j < MAX_LENGTH; j++) {
+                if(childChromo1.getGene(j) == obj1) {
+                    ind1 = j;
+                } else if (childChromo1.getGene(j) == obj2) {
+                    ind2 = j;
+                }
+            } // j
+
+            // Swap them.
+            if(obj1 != obj2) {
+                childChromo1.setGene(ind1, obj2);
+                childChromo1.setGene(ind2, obj1);
+            }
+
+            // Get the items//  positions in the offspring.
+            for(j = 0; j < MAX_LENGTH; j++) {
+                if(childChromo2.getGene(j) == obj2) {
+                    ind1 = j;
+                } else if(childChromo2.getGene(j) == obj1) {
+                    ind2 = j;
+                }
+            } 
+
+            // Swap them.
+            if(obj1 != obj2) {
+                childChromo2.setGene(ind1, obj1);
+                childChromo2.setGene(ind2, obj2);
+            }
+
+        } 
+	}
     
     
     //-----------------------------------------
