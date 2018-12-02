@@ -286,6 +286,15 @@ public class GeneticAlgorithm {
     // Reset all flags in Selection 
     //----------------------------------------------------
     public void resetSelection(){
+        int populationSize = 0;
+        Chromosome chromo = null;
+
+        populationSize = population.size();
+        for(int i = 0; i < populationSize; i++) {
+                chromo = population.get(i);
+                chromo.setSelected(false);
+        }   
+    
     }
     
     
