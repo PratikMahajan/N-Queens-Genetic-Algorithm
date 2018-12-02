@@ -282,6 +282,12 @@ public class GeneticAlgorithm {
         } 
 	}
     
+    //----------------------------------------------------
+    // Reset all flags in Selection 
+    //----------------------------------------------------
+    public void resetSelection(){
+    }
+    
     
     //-----------------------------------------
     //getters and setters
