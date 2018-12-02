@@ -253,7 +253,7 @@ public class GeneticAlgorithm {
             obj2 = chromo2.getGene(i);
 
             // Get the items//  positions in the offspring.
-            for(j = 0; j < MAX_LENGTH; j++) {
+            for(j = 0; j <= MAX_LENGTH; j++) {
                 if(childChromo1.getGene(j) == obj1) {
                     ind1 = j;
                 } else if (childChromo1.getGene(j) == obj2) {
