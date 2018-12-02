@@ -135,12 +135,7 @@ public class GeneticAlgorithm {
 		mutations++;
 	}
         
-      //----------------------------------------------------
-    // Get Fitness 
-    //----------------------------------------------------
-        
-     
-    public void getFitness() {
+public void getFitness() {
             // min 0% and max 100%
             int populationSize = population.size();
             Chromosome chromo = null;
@@ -212,6 +207,156 @@ public class GeneticAlgorithm {
         }
     }
 
+  //----------------------------------------------------
+    // Parent Selection
+    //----------------------------------------------------
+        
+        public int chooseParent() {
+        int parent = 0;
+        Chromosome chromo = null;
+        boolean stop = false;
+
+        while(!stop) {
+            parent = generateRandomNumber(0, population.size() - 1);
+            chromo = population.get(parent);
+            if(chromo.isSelected() == true) {
+                stop = true;
+            }
+        }
+
+        return parent;    	
+    }   
+        
+          public int chooseParent(int parentA) {
+        int parent = 0;
+        Chromosome chromo = null;
+        boolean stop = false;
+
+        while(!stop) {
+            // Randomly choose an eligible parent.
+             parent = generateRandomNumber(0, population.size() - 1);
+            if(parent != parentA){
+                chromo = population.get(parent);
+                if(chromo.isSelected() == true){
+                    stop = true;
+                }
+            }
+        }
+
+        return parent;    	
+    } 
+          
+          public void mate() {
+	int rand = 0;
+        int parentA = 0;
+        int parentB = 0;
+        int index1 = 0;
+        int index2 = 0;
+        Chromosome chromo1 = null;
+        Chromosome chromo2 = null;
+        
+        for(int i = 0; i < OFFSPRING_PER_GENERATION; i++) {
+            parentA = chooseParent();
+            // Test probability of mating.
+            rand = generateRandomNumber(0, 100);
+            if(rand <= MATING_PROBABILITY * 100) {
+                parentB = chooseParent(parentA);
+                chromo1 = new Chromosome(MAX_LENGTH);
+                chromo2 = new Chromosome(MAX_LENGTH);
+                population.add(chromo1);
+                index1 = population.indexOf(chromo1);
+                population.add(chromo2);
+                index2 = population.indexOf(chromo2);
+                
+                 // partiallyMappedCrossover
+                partiallyMappedCrossover(parentA, parentB, index1, index2);
+
+                if(childCount - 1 == nextMutation) {
+                    exchangeMutation(index1, 1);
+                } else if (childCount == nextMutation) {
+                    exchangeMutation(index2, 1);
+                }
+
+                population.get(index1).computeConflict();
+                population.get(index2).computeConflict();
+
+                childCount += 2;
+
+               //  Schedule next mutation
+                if(childCount % (int)Math.round(1.0 / MUTATION_RATE) == 0) {
+                    nextMutation = childCount + generateRandomNumber(0, (int)Math.round(1.0 / MUTATION_RATE));
+      
+                }
+            } 
+          }
+          }
+          
+          
+          public void partiallyMappedCrossover(int chromA, int chromB, int child1, int child2) {
+        int j = 0;
+        int obj1 = 0;
+        int obj2 = 0;
+        int ind1 = 0;
+        int ind2 = 0;
+        Chromosome chromo1 = population.get(chromA);
+        Chromosome chromo2 = population.get(chromB);
+        Chromosome childChromo1 = population.get(child1);
+        Chromosome childChromo2 = population.get(child2);
+        int crossPoint1 = generateRandomNumber(0, MAX_LENGTH - 1);
+        int crossPoint2 = noRepeteRandom(MAX_LENGTH - 1, crossPoint1);
+        
+        //gets the crosspoint from where to swap
+        if(crossPoint2 < crossPoint1) {
+            j = crossPoint1;
+            crossPoint1 = crossPoint2;
+            crossPoint2 = j;
+        }
+
+        // Copy Parent genes to offspring.
+        for(int i = 0; i < MAX_LENGTH; i++) {
+            childChromo1.setGene(i, chromo1.getGene(i));
+            childChromo2.setGene(i, chromo2.getGene(i));
+        }
+
+        for(int i = crossPoint1; i <= crossPoint2; i++) {
+            // Get the two items to swap.
+            obj1 = chromo1.getGene(i);
+            obj2 = chromo2.getGene(i);
+
+            // Get the items//  positions in the offspring.
+            for(j = 0; j <= MAX_LENGTH; j++) {
+                if(childChromo1.getGene(j) == obj1) {
+                    ind1 = j;
+                } else if (childChromo1.getGene(j) == obj2) {
+                    ind2 = j;
+                }
+            } // j
+
+            // Swap them.
+            if(obj1 != obj2) {
+                childChromo1.setGene(ind1, obj2);
+                childChromo1.setGene(ind2, obj1);
+            }
+
+            // Get the items//  positions in the offspring.
+            for(j = 0; j < MAX_LENGTH; j++) {
+                if(childChromo2.getGene(j) == obj2) {
+                    ind1 = j;
+                } else if(childChromo2.getGene(j) == obj1) {
+                    ind2 = j;
+                }
+            } 
+
+            // Swap them.
+            if(obj1 != obj2) {
+                childChromo2.setGene(ind1, obj1);
+                childChromo2.setGene(ind2, obj2);
+            }
+
+        } 
+	}
+    
+    
     //-----------------------------------------
     //getters and setters
     //-----------------------------------------
