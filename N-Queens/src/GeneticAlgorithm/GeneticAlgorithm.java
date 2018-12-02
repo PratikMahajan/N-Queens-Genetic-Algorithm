@@ -196,9 +196,96 @@ public class GeneticAlgorithm {
                 index1 = population.indexOf(chromo1);
                 population.add(chromo2);
                 index2 = population.indexOf(chromo2);
+                
+                 // partiallyMappedCrossover
+                partiallyMappedCrossover(parentA, parentB, index1, index2);
+
+                if(childCount - 1 == nextMutation) {
+                    exchangeMutation(index1, 1);
+                } else if (childCount == nextMutation) {
+                    exchangeMutation(index2, 1);
+                }
+
+                population.get(index1).computeConflict();
+                population.get(index2).computeConflict();
+
+                childCount += 2;
+
+                // Schedule next mutation.
+                if(childCount % (int)Math.round(1.0 / MUTATION_RATE) == 0) {
+                    nextMutation = childCount + generateRandomNumber(0, (int)Math.round(1.0 / MUTATION_RATE));
+      
+                }
             } 
           }
           }
+          
+          
+          public void partiallyMappedCrossover(int chromA, int chromB, int child1, int child2) {
+        int j = 0;
+        int obj1 = 0;
+        int obj2 = 0;
+        int ind1 = 0;
+        int ind2 = 0;
+        Chromosome chromo1 = population.get(chromA);
+        Chromosome chromo2 = population.get(chromB);
+        Chromosome childChromo1 = population.get(child1);
+        Chromosome childChromo2 = population.get(child2);
+        int crossPoint1 = generateRandomNumber(0, MAX_LENGTH - 1);
+        int crossPoint2 = noRepeteRandom(MAX_LENGTH - 1, crossPoint1);
+        
+        //gets the crosspoint from where to swap
+        if(crossPoint2 < crossPoint1) {
+            j = crossPoint1;
+            crossPoint1 = crossPoint2;
+            crossPoint2 = j;
+        }
+
+        // Copy Parent genes to offspring.
+        for(int i = 0; i < MAX_LENGTH; i++) {
+            childChromo1.setGene(i, chromo1.getGene(i));
+            childChromo2.setGene(i, chromo2.getGene(i));
+        }
+
+        for(int i = crossPoint1; i <= crossPoint2; i++) {
+            // Get the two items to swap.
+            obj1 = chromo1.getGene(i);
+            obj2 = chromo2.getGene(i);
+
+            // Get the items//  positions in the offspring.
+            for(j = 0; j < MAX_LENGTH; j++) {
+                if(childChromo1.getGene(j) == obj1) {
+                    ind1 = j;
+                } else if (childChromo1.getGene(j) == obj2) {
+                    ind2 = j;
+                }
+            } // j
+
+            // Swap them.
+            if(obj1 != obj2) {
+                childChromo1.setGene(ind1, obj2);
+                childChromo1.setGene(ind2, obj1);
+            }
+
+            // Get the items//  positions in the offspring.
+            for(j = 0; j < MAX_LENGTH; j++) {
+                if(childChromo2.getGene(j) == obj2) {
+                    ind1 = j;
+                } else if(childChromo2.getGene(j) == obj1) {
+                    ind2 = j;
+                }
+            } 
+
+            // Swap them.
+            if(obj1 != obj2) {
+                childChromo2.setGene(ind1, obj1);
+                childChromo2.setGene(ind2, obj2);
+            }
+
+        } 
+	}
+    
+    
     //-----------------------------------------
     //getters and setters
     //-----------------------------------------
