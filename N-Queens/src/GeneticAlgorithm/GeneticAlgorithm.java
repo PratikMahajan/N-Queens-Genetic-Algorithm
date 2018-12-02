@@ -162,7 +162,7 @@ public class GeneticAlgorithm {
     // https://stackoverflow.com/questions/298301/roulette-wheel-selection-algorithm
     // https://stackoverflow.com/questions/177271/roulette-selection-in-genetic-algorithms
     //----------------------------------------------------
-    
+    //
     public void rouletteSelection() {
         int populationSize = population.size();
         int maximumToSelect = generateRandomNumber(MIN_SELECT, MAX_SELECT);
