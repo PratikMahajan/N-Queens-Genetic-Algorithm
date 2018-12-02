@@ -212,6 +212,14 @@ public class GeneticAlgorithm {
         }
     }
 
+      //----------------------------------------------------
+    // Partially Mapped Crossover
+    // https://github.com/DEAP/deap/blob/master/deap/tools/crossover.py
+    // https://stackoverflow.com/questions/52350699/how-to-perform-partially-mapped-crossover-operator-pmx
+    //----------------------------------------------------
+    
+    
+    
     //-----------------------------------------
     //getters and setters
     //-----------------------------------------
