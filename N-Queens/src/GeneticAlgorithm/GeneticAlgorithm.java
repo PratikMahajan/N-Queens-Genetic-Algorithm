@@ -293,6 +293,7 @@ public void getFitness() {
           
           
           public void partiallyMappedCrossover(int chromA, int chromB, int child1, int child2) {
+
         int j = 0;
         int obj1 = 0;
         int obj2 = 0;
@@ -355,6 +356,21 @@ public void getFitness() {
 
         } 
 	}
+   
+    //----------------------------------------------------
+    // Reset all flags in Selection 
+    //----------------------------------------------------
+    public void resetSelection(){
+        int populationSize = 0;
+        Chromosome chromo = null;
+
+        populationSize = population.size();
+        for(int i = 0; i < populationSize; i++) {
+                chromo = population.get(i);
+                chromo.setSelected(false);
+        }   
+    
+    }
     
     
     //-----------------------------------------
