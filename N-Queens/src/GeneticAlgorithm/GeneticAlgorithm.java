@@ -211,11 +211,11 @@ public class GeneticAlgorithm {
 
                 childCount += 2;
 
-                // Schedule next mutation
-//                if(childCount % (int)Math.round(1.0 / MUTATION_RATE) == 0) {
-//                    nextMutation = childCount + generateRandomNumber(0, (int)Math.round(1.0 / MUTATION_RATE));
-//      
-//                }
+               //  Schedule next mutation
+                if(childCount % (int)Math.round(1.0 / MUTATION_RATE) == 0) {
+                    nextMutation = childCount + generateRandomNumber(0, (int)Math.round(1.0 / MUTATION_RATE));
+      
+                }
             } 
           }
           }
