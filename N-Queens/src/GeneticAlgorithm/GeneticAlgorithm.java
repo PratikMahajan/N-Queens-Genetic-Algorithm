@@ -183,6 +183,21 @@ public class GeneticAlgorithm {
         int index2 = 0;
         Chromosome chromo1 = null;
         Chromosome chromo2 = null;
+        
+        for(int i = 0; i < OFFSPRING_PER_GENERATION; i++) {
+            parentA = chooseParent();
+            // Test probability of mating.
+            rand = generateRandomNumber(0, 100);
+            if(rand <= MATING_PROBABILITY * 100) {
+                parentB = chooseParent(parentA);
+                chromo1 = new Chromosome(MAX_LENGTH);
+                chromo2 = new Chromosome(MAX_LENGTH);
+                population.add(chromo1);
+                index1 = population.indexOf(chromo1);
+                population.add(chromo2);
+                index2 = population.indexOf(chromo2);
+            } 
+          }
           }
     //-----------------------------------------
     //getters and setters
