@@ -174,6 +174,16 @@ public class GeneticAlgorithm {
 
         return parent;    	
     } 
+          
+          public void mate() {
+	int rand = 0;
+        int parentA = 0;
+        int parentB = 0;
+        int index1 = 0;
+        int index2 = 0;
+        Chromosome chromo1 = null;
+        Chromosome chromo2 = null;
+          }
     //-----------------------------------------
     //getters and setters
     //-----------------------------------------
