@@ -1,11 +1,13 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
+ * References:
+ * https://gist.github.com/aliva/5355681
+ * https://github.com/hajix/N-Queen
  * and open the template in the editor.
  */
 package GeneticAlgorithm;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 /**
@@ -53,6 +55,23 @@ public class GeneticAlgorithm {
 		epoch = 0;
 		populationSize = 0;
 	}
+        
+        public GeneticAlgorithm(int n, int max_epoch, double mutation_rate ) {
+		MAX_LENGTH = n;
+		START_SIZE = 40;
+		MAX_EPOCHS = max_epoch;
+		MATING_PROBABILITY = 0.7;
+		MUTATION_RATE = mutation_rate;
+		MIN_SELECT = 10; 
+		MAX_SELECT = 30;
+		OFFSPRING_PER_GENERATION = 20;
+		MINIMUM_SHUFFLES = 8; 
+		MAXIMUM_SHUFFLES = 20;  
+		epoch = 0;
+		populationSize = 0;
+	}
+        
+        
     
         
     //----------------------------------------------------
@@ -74,6 +93,8 @@ public class GeneticAlgorithm {
             }
             return random; 
         }
+        
+        
     //----------------------------------------------------
     //Initialize queens in random position
     //----------------------------------------------------     
@@ -115,15 +136,7 @@ public class GeneticAlgorithm {
 	}
         
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
+  
     //-----------------------------------------
     //getters and setters
     //-----------------------------------------
