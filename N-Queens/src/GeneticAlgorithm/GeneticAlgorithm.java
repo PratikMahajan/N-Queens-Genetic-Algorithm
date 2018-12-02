@@ -161,17 +161,17 @@ public class GeneticAlgorithm {
         Chromosome chromo = null;
         boolean stop = false;
 
-//        while(!stop) {
-//            // Randomly choose an eligible parent.
-//             parent = generateRandomNumber(0, population.size() - 1);
-//            if(parent != parentA){
-//                chromo = population.get(parent);
-//                if(chromo.isSelected() == true){
-//                    stop = true;
-//                }
-//            }
-//        }
-//
+        while(!stop) {
+            // Randomly choose an eligible parent.
+             parent = generateRandomNumber(0, population.size() - 1);
+            if(parent != parentA){
+   //             chromo = population.get(parent);
+                if(chromo.isSelected() == true){
+                    stop = true;
+                }
+            }
+        }
+
         return parent;    	
     } 
     //-----------------------------------------
