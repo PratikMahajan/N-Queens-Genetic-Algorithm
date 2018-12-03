@@ -135,7 +135,13 @@ public class GeneticAlgorithm {
 		mutations++;
 	}
         
-public void getFitness() {
+
+    //----------------------------------------------------
+    // Get Fitness 
+    //----------------------------------------------------
+        
+     
+    public void getFitness() {
             // min 0% and max 100%
             int populationSize = population.size();
             Chromosome chromo = null;
@@ -151,14 +157,14 @@ public void getFitness() {
                     chromo.setFitness((worst - chromo.getConflicts()) * 100.0 / best);
             }   
     }
-
-   
+        
+    
     //----------------------------------------------------
     // Roulette Selection
     // https://stackoverflow.com/questions/298301/roulette-wheel-selection-algorithm
     // https://stackoverflow.com/questions/177271/roulette-selection-in-genetic-algorithms
     //----------------------------------------------------
-    //
+    
     public void rouletteSelection() {
         int populationSize = population.size();
         int maximumToSelect = generateRandomNumber(MIN_SELECT, MAX_SELECT);
@@ -206,12 +212,13 @@ public void getFitness() {
             }
         }
     }
+    
 
-  //----------------------------------------------------
+    //----------------------------------------------------
     // Parent Selection
     //----------------------------------------------------
-        
-        public int chooseParent() {
+    
+    public int chooseParent() {
         int parent = 0;
         Chromosome chromo = null;
         boolean stop = false;
@@ -225,16 +232,17 @@ public void getFitness() {
         }
 
         return parent;    	
-    }   
-        
-          public int chooseParent(int parentA) {
+    }    
+    
+  
+    public int chooseParent(int parentA) {
         int parent = 0;
         Chromosome chromo = null;
         boolean stop = false;
 
         while(!stop) {
             // Randomly choose an eligible parent.
-             parent = generateRandomNumber(0, population.size() - 1);
+            parent = generateRandomNumber(0, population.size() - 1);
             if(parent != parentA){
                 chromo = population.get(parent);
                 if(chromo.isSelected() == true){
@@ -245,8 +253,12 @@ public void getFitness() {
 
         return parent;    	
     } 
-          
-          public void mate() {
+    
+    //----------------------------------------------------
+    // Mating
+    //----------------------------------------------------
+        
+    public void mate() {
 	int rand = 0;
         int parentA = 0;
         int parentB = 0;
@@ -254,7 +266,7 @@ public void getFitness() {
         int index2 = 0;
         Chromosome chromo1 = null;
         Chromosome chromo2 = null;
-        
+
         for(int i = 0; i < OFFSPRING_PER_GENERATION; i++) {
             parentA = chooseParent();
             // Test probability of mating.
@@ -268,7 +280,7 @@ public void getFitness() {
                 population.add(chromo2);
                 index2 = population.indexOf(chromo2);
                 
-                 // partiallyMappedCrossover
+                // partiallyMappedCrossover
                 partiallyMappedCrossover(parentA, parentB, index1, index2);
 
                 if(childCount - 1 == nextMutation) {
@@ -282,18 +294,22 @@ public void getFitness() {
 
                 childCount += 2;
 
-               //  Schedule next mutation
+                // Schedule next mutation.
                 if(childCount % (int)Math.round(1.0 / MUTATION_RATE) == 0) {
                     nextMutation = childCount + generateRandomNumber(0, (int)Math.round(1.0 / MUTATION_RATE));
       
                 }
-            } 
-          }
-          }
-          
-          
-          public void partiallyMappedCrossover(int chromA, int chromB, int child1, int child2) {
-
+            }
+        } 
+    }   
+        
+    //----------------------------------------------------
+    // Partially Mapped Crossover
+    // https://github.com/DEAP/deap/blob/master/deap/tools/crossover.py
+    // https://stackoverflow.com/questions/52350699/how-to-perform-partially-mapped-crossover-operator-pmx
+    //----------------------------------------------------
+    
+    public void partiallyMappedCrossover(int chromA, int chromB, int child1, int child2) {
         int j = 0;
         int obj1 = 0;
         int obj2 = 0;
@@ -325,7 +341,7 @@ public void getFitness() {
             obj2 = chromo2.getGene(i);
 
             // Get the items//  positions in the offspring.
-            for(j = 0; j <= MAX_LENGTH; j++) {
+            for(j = 0; j < MAX_LENGTH; j++) {
                 if(childChromo1.getGene(j) == obj1) {
                     ind1 = j;
                 } else if (childChromo1.getGene(j) == obj2) {
@@ -356,11 +372,14 @@ public void getFitness() {
 
         } 
 	}
-   
+    
+    
     //----------------------------------------------------
     // Reset all flags in Selection 
     //----------------------------------------------------
+    
     public void resetSelection(){
+        
         int populationSize = 0;
         Chromosome chromo = null;
 
@@ -369,9 +388,8 @@ public void getFitness() {
                 chromo = population.get(i);
                 chromo.setSelected(false);
         }   
-    
+        
     }
-    
     
     //-----------------------------------------
     //getters and setters
