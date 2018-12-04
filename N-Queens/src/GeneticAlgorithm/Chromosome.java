@@ -38,18 +38,21 @@ public class Chromosome implements Comparable<Chromosome>{
             this.gene[i] = i;
             }
     }
-
     
-    
-    
-    
-    
-    
-    
+   
 //------------------------------------------------------
 //    Getters and Setters 
 //------------------------------------------------------
     
+    public int getMAX_LENGTH() {
+        return MAX_LENGTH;
+    }
+
+    
+    public void setMAX_LENGTH(int MAX_LENGTH) {    
+        this.MAX_LENGTH = MAX_LENGTH;
+    }
+
     public int[] getGene() {
         return gene;
     }
@@ -107,7 +110,11 @@ public class Chromosome implements Comparable<Chromosome>{
     
     public void emptyBoard(String[][] board){
         
-        board= new String[MAX_LENGTH][MAX_LENGTH];
+        for (int i = 0; i < MAX_LENGTH; i++) {
+			for (int j = 0; j < MAX_LENGTH; j++) {
+				board[i][j] = "";
+			}
+		}
         
     }
     

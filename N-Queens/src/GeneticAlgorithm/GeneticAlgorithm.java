@@ -70,8 +70,117 @@ public class GeneticAlgorithm {
 		epoch = 0;
 		populationSize = 0;
 	}
+        public GeneticAlgorithm(int n) {
+		MAX_LENGTH = n;
+		START_SIZE = 40;
+		MAX_EPOCHS = 1000;
+		MATING_PROBABILITY = 0.7;
+		MUTATION_RATE = 0.001;
+		MIN_SELECT = 10; 
+		MAX_SELECT = 30;
+		OFFSPRING_PER_GENERATION = 20;
+		MINIMUM_SHUFFLES = 8; 
+		MAXIMUM_SHUFFLES = 20;  
+		epoch = 0;
+		populationSize = 0;
+	}
+        
+    //----------------------------------------------------
+    // Run Genetic Algorithm
+    //----------------------------------------------------    
+        
+        public boolean runGA(){
+            population = new ArrayList<Chromosome>();
+            solutions = new ArrayList<Chromosome>();
+            rand = new Random();
+            nextMutation = 0;
+            childCount = 0;                 
+            mutations = 0;
+            epoch = 0;
+            populationSize = 0;
+
+            boolean stop = false;
+            Chromosome chromo = null;
+            nextMutation = generateRandomNumber(0, (int)Math.round(1.0 / MUTATION_RATE));
+
+            initializeQueens();
+
+            while(!stop) {
+                    populationSize = population.size();
+
+                    for(int i = 0; i < populationSize; i++) {
+                            chromo = population.get(i);
+                            if((chromo.getConflicts() == 0)) {			//if solution found
+                                    stop = true;
+                            }
+                    }
+
+                    if(epoch == MAX_EPOCHS) {							//if Max Number of Cycles 
+                            stop = true;
+                    }
+
+                    getFitness();
+
+                    rouletteSelection();
+
+                    mate();
+
+                    resetSelection();
+
+                    epoch++;
+                    System.out.println("Epoch: " + epoch);
+            }
+
+            if(epoch >= MAX_EPOCHS) {
+                    System.out.println("No solution found");
+                    stop = false;
+            } else {
+                    populationSize = population.size();					//prints the solutions if found within mnc
+                    for(int i = 0; i < populationSize; i++) {
+                            chromo = population.get(i);
+                            if(chromo.getConflicts() == 0) {
+                                    solutions.add(chromo);
+                                    printSolution(chromo);
+                            }
+                    }
+            }
+            System.out.println("Completed");
+            System.out.println(mutations + " mutations in " + childCount + " offspring."); 
+
+            return stop;
+
+        }
         
         
+       	public void printSolution(Chromosome solution) {
+		String board[][] = new String[MAX_LENGTH][MAX_LENGTH];
+
+		// Clear the board.
+		for(int x = 0; x < MAX_LENGTH; x++) {
+			for(int y = 0; y < MAX_LENGTH; y++) {
+			board[x][y] = "";
+			}
+		}
+
+		for(int x = 0; x < MAX_LENGTH; x++) {
+			board[x][solution.getGene(x)] = "*";
+		}
+
+		// Display the board.
+		System.out.println("Board:");
+		for(int y = 0; y < MAX_LENGTH; y++) {
+			for(int x = 0; x < MAX_LENGTH; x++) {
+				if(board[x][y] == "*") {
+					System.out.print("* ");
+				} else {
+					System.out.print(". ");
+				}
+			}
+			System.out.print("\n");
+		}
+	} 
+        
+     
     
         
     //----------------------------------------------------
