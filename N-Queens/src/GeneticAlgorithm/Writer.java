@@ -16,25 +16,14 @@ import java.util.ArrayList;
 public class Writer {
     private ArrayList<String> list;
 	
-	/* Instantiates the writer class.
-	 *
-	 */
 	public Writer() {
 		list = new ArrayList<String>();
 	}
 
-	/* Accepts a string to add to the string list in the writer class.
-	 *
-	 * @param: a line string to write into the log
-	 */
 	public void add(String line) {
 		list.add(line);
 	}
 	
-	/* Accepts a chromosome and converts the content solution into strings then adds it to the string list.
-	 *
-	 * @param: a chromosome to write into the log
-	 */
 	public void add(Chromosome c) {
 		int n = c.getMAX_LENGTH();
 		String board[][] = new String[n][n];
@@ -48,11 +37,6 @@ public class Writer {
 		printBoard(board, n);
 	}
 	
-	/* Clears a 2D string board with empty string.
-	 *
-	 * @param: a 2D string board
-	 * @param: length of n
-	 */
 	public void clearBoard(String[][] board, int n) {
 		// Clear the board.
 		for(int x = 0; x < n; x++) {
@@ -62,11 +46,6 @@ public class Writer {
 		}
 	}
 	
-	/* Replaces the position of the queens with Q in the string board and a dot for indexes with no queens.
-	 *
-	 * @param: a 2D string board
-	 * @param: length of n
-	 */
 	public void printBoard(String[][] board, int n) {
 		// Display the board.
 		for(int y = 0; y < n; y++) {
@@ -82,10 +61,7 @@ public class Writer {
 		}
 	}
 	
-	/* Writes the string list into a log file.
-	 *
-	 * @param: a string filename
-	 */
+
 	public void writeFile(String filename) {
 		try{
         	FileWriter fw = new FileWriter(filename);
@@ -99,7 +75,7 @@ public class Writer {
 
 			bw.close();
         } catch (IOException e) {
-        	System.out.println("Writing failed");
+        	System.out.println("output failed");
         }
 		
 	}
