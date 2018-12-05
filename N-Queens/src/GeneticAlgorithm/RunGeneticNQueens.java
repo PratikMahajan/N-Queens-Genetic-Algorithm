@@ -42,7 +42,7 @@ public class RunGeneticNQueens {
 
             logParameters();
 
-    for(int i = 0; i < MAX_RUN; ) {												//run 50 sucess to pass passing criteria
+    for(int i = 0; i < MAX_RUN; ) {									
             startTime = System.nanoTime();
             if(ga.runGA()) {
                     endTime = System.nanoTime();
@@ -64,11 +64,11 @@ public class RunGeneticNQueens {
             logWriter.add((String)("Population size: "+ga.getPopulationSize()));
             logWriter.add("");
 
-            for(Chromosome c: ga.getSolutions()) {								//write solutions to log file
+            for(Chromosome c: ga.getSolutions()) {							
                                     logWriter.add(c);
                                     logWriter.add("");
                     }
-            } else {																//count failures for failing criteria
+            } else {														
                     fail++;
                     System.out.println("Fail!");
             }
@@ -77,7 +77,7 @@ public class RunGeneticNQueens {
                     System.out.println("Change Parametres");
                     break;
             }
-            startTime = 0;															//reset time
+            startTime = 0;												
             endTime = 0;
             totalTime = 0;
     }
@@ -87,7 +87,7 @@ public class RunGeneticNQueens {
     logWriter.add("Runtime summary");
     logWriter.add("");
 
-            for(int x = 0; x < runtimes.length; x++){									//print runtime summary
+            for(int x = 0; x < runtimes.length; x++){					
                     logWriter.add(Long.toString(runtimes[x]));
             }
 
