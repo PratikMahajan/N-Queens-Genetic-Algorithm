@@ -1,14 +1,14 @@
-# Java N-Queens Genetic-Algorithm
+# N-Queens Genetic-Algorithm
 Team Member - Pratik Mahajan, Mansi Raghuwanshi, Varad Desai
 
 ## Introduction
-<--some test here-->
+<--some text here-->
 
 ## Problem Statement
-<--some test here-->
+<--some text here-->
 
 ## Impementation
-<--some test here-->
+<--some text here-->
 
 
 ## References
