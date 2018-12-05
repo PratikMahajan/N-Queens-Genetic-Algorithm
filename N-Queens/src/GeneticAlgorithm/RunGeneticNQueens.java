@@ -130,62 +130,7 @@ public class RunGeneticNQueens {
             RunGeneticNQueens tester = new RunGeneticNQueens();
 
             tester.test(8, 0.001, 1000);
-/*		tester.test(8, 0.001, 1000);
-            tester.test(12, 0.001, 1000);
-            tester.test(16, 0.001, 1000);
-            tester.test(20, 0.001, 1000);
 
-            tester.test(20, 0.001, 1000);
-            tester.test(20, 0.005, 1000);
-            tester.test(20, 0.01, 1000);
-            tester.test(20, 0.05, 1000);
-            tester.test(20, 0.1, 1000);
-
-            tester.test(16, 0.001, 5000);
-            tester.test(16, 0.005, 5000);
-            tester.test(16, 0.01, 5000);
-            tester.test(16, 0.05, 5000);
-            tester.test(16, 0.1, 5000);
-
-            tester.test(20, 0.001, 5000);
-            tester.test(20, 0.005, 5000);
-            tester.test(20, 0.01, 5000);
-            tester.test(20, 0.05, 5000);
-            tester.test(20, 0.1, 5000);
-
-            tester.test(16, 0.001, 1000);
-            tester.test(16, 0.005, 1000);
-            tester.test(16, 0.01, 1000);
-            tester.test(16, 0.05, 1000);
-            tester.test(16, 0.1, 1000);
-
-            tester.test(16, 0.001, 5000);
-            tester.test(16, 0.005, 5000);
-            tester.test(16, 0.01, 5000);
-            tester.test(16, 0.05, 5000);
-            tester.test(16, 0.1, 5000);
-            tester.test(16, 0.001, 10000);
-            tester.test(16, 0.005, 10000);
-            tester.test(16, 0.01, 10000);
-            tester.test(16, 0.05, 10000);
-            tester.test(16, 0.1, 10000);
-            tester.test(20, 0.001, 1000);
-            tester.test(20, 0.005, 1000);
-            tester.test(20, 0.01, 1000);
-            tester.test(20, 0.05, 1000);
-            tester.test(20, 0.1, 1000);
-
-            tester.test(20, 0.001, 5000);
-            tester.test(20, 0.005, 5000);
-            tester.test(20, 0.01, 5000);
-            tester.test(20, 0.05, 5000);
-            tester.test(20, 0.1, 5000);
-            tester.test(20, 0.001, 10000);
-            tester.test(20, 0.005, 10000);
-            tester.test(20, 0.01, 10000);
-            tester.test(20, 0.05, 10000);
-            tester.test(20, 0.1, 10000);	
-*/
 
     }
 
