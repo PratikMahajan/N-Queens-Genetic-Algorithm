@@ -1,2 +1,10 @@
-# Java-Neural-Network
+# Java-Genetic-Algorithm
 # References
+1. https://developers.google.com/optimization/cp/queens
+2. https://www.geeksforgeeks.org/n-queen-problem-backtracking-3/
+3. https://arxiv.org/pdf/1802.02006.pdf
+4. https://kushalvyas.github.io/gen_8Q.html
+5. https://www.kaggle.com/mrknoot/genetic-algorithms-solving-the-n-queens-problem
+6. http://mnemstudio.org/genetic-algorithms-n-queens-example-1.htm
+7. https://datajenius.com/articles/solving-n-queens-with-genetic-algorithms
+8. https://ieeexplore.ieee.org/document/6802550
