@@ -1,5 +1,17 @@
-# Java-Genetic-Algorithm
-# References
+# Java N-Queens Genetic-Algorithm
+Team Member - Pratik Mahajan, Mansi Raghuwanshi, Varad Desai
+
+## Introduction
+<--some test here-->
+
+## Problem Statement
+<--some test here-->
+
+## Impementation
+<--some test here-->
+
+
+## References
 1. https://developers.google.com/optimization/cp/queens
 2. https://www.geeksforgeeks.org/n-queen-problem-backtracking-3/
 3. https://arxiv.org/pdf/1802.02006.pdf
