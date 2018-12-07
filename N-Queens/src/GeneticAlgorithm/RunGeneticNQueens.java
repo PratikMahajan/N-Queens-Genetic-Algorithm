@@ -48,9 +48,11 @@ public class RunGeneticNQueens {
                 endTime = System.nanoTime();
                 totalTime = endTime - startTime;
 
+
                 System.out.println("Done");
                 System.out.println("run "+(i+1));
-            System.out.println("time in nanoseconds: "+totalTime);
+            System.out.println("|"+totalTime);
+
             System.out.println("Success!");
 
             runtimes[i] = totalTime;
@@ -64,28 +66,30 @@ public class RunGeneticNQueens {
             logWriter.add((String)("Population size: "+ga.getPopulationSize()));
             logWriter.add("");
 
-        for(Chromosome c: ga.getSolutions()) {							
-                                logWriter.add(c);
-                                logWriter.add("");
-                }
-        } else {														
-                fail++;
-                System.out.println("Fail!");
-        }
 
-        if(fail >= 100) {
-                System.out.println("Change Parametres");
-                break;
-        }
-        startTime = 0;												
-        endTime = 0;
-        totalTime = 0;
+            for(Chromosome c: ga.getSolutions()) {							
+                                    logWriter.add(c);
+                                    logWriter.add("");
+                    }
+            } else {														
+                    fail++;
+                    //System.out.println("Fail!");
+            }
+
+            if(fail >= 100) {
+                    System.out.println("Change Parametres");
+                    break;
+            }
+            startTime = 0;												
+            endTime = 0;
+            totalTime = 0;
     }
 
-        System.out.println("Success: " +success);
-        System.out.println("failures: "+fail);
-        logWriter.add("Runtime summary");
-        logWriter.add("");
+    System.out.println("Success: " +success+" failures: "+fail);
+    //System.out.println("failures: "+fail);
+    logWriter.add("Runtime summary");
+    logWriter.add("");
+
 
                 for(int x = 0; x < runtimes.length; x++){					
                         logWriter.add(Long.toString(runtimes[x]));
@@ -97,8 +101,10 @@ public class RunGeneticNQueens {
                 logWriter.add(Long.toString(testEnd - testStart));
 
 
-        logWriter.writeFile(filepath);
-        printRuntimes();
+
+    logWriter.writeFile(filepath);
+    //printRuntimes();
+
     }
 
 
@@ -128,10 +134,11 @@ public class RunGeneticNQueens {
 
     public static void main(String args[]) {
             RunGeneticNQueens tester = new RunGeneticNQueens();
-
-            tester.test(8, 0.001, 1000);
-
-
+            int N = 10;
+            for(int i=4; i<=N; i++){
+                System.out.println("Experiment No: "+i);
+            tester.test(i, 0.001, 1000);
+            }    
     }
 
     
