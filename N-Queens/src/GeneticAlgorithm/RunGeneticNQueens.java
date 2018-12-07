@@ -30,26 +30,26 @@ public class RunGeneticNQueens {
 
 
     public void test(int maxLength, double mutationRate, int maxEpoch) {
-            MAX_LENGTH = maxLength;
-            ga = new GeneticAlgorithm(MAX_LENGTH, maxEpoch, mutationRate);
-            long testStart = System.nanoTime();
-            String filepath = "GA-N"+MAX_LENGTH+"-"+mutationRate+"-"+maxEpoch+".txt";
-            long startTime = 0;
-    long endTime = 0;
-    long totalTime = 0;
-    int fail = 0;
-    int success = 0;
+        MAX_LENGTH = maxLength;
+        ga = new GeneticAlgorithm(MAX_LENGTH, maxEpoch, mutationRate);
+        long testStart = System.nanoTime();
+        String filepath = "GA-N"+MAX_LENGTH+"-"+mutationRate+"-"+maxEpoch+".txt";
+        long startTime = 0;
+        long endTime = 0;
+        long totalTime = 0;
+        int fail = 0;
+        int success = 0;
 
             logParameters();
 
-    for(int i = 0; i < MAX_RUN; ) {									
+        for(int i = 0; i < MAX_RUN; ) {									
             startTime = System.nanoTime();
             if(ga.runGA()) {
-                    endTime = System.nanoTime();
-                    totalTime = endTime - startTime;
+                endTime = System.nanoTime();
+                totalTime = endTime - startTime;
 
-                    System.out.println("Done");
-                    System.out.println("run "+(i+1));
+                System.out.println("Done");
+                System.out.println("run "+(i+1));
             System.out.println("time in nanoseconds: "+totalTime);
             System.out.println("Success!");
 
@@ -64,41 +64,41 @@ public class RunGeneticNQueens {
             logWriter.add((String)("Population size: "+ga.getPopulationSize()));
             logWriter.add("");
 
-            for(Chromosome c: ga.getSolutions()) {							
-                                    logWriter.add(c);
-                                    logWriter.add("");
-                    }
-            } else {														
-                    fail++;
-                    System.out.println("Fail!");
-            }
+        for(Chromosome c: ga.getSolutions()) {							
+                                logWriter.add(c);
+                                logWriter.add("");
+                }
+        } else {														
+                fail++;
+                System.out.println("Fail!");
+        }
 
-            if(fail >= 100) {
-                    System.out.println("Change Parametres");
-                    break;
-            }
-            startTime = 0;												
-            endTime = 0;
-            totalTime = 0;
+        if(fail >= 100) {
+                System.out.println("Change Parametres");
+                break;
+        }
+        startTime = 0;												
+        endTime = 0;
+        totalTime = 0;
     }
 
-    System.out.println("Success: " +success);
-    System.out.println("failures: "+fail);
-    logWriter.add("Runtime summary");
-    logWriter.add("");
+        System.out.println("Success: " +success);
+        System.out.println("failures: "+fail);
+        logWriter.add("Runtime summary");
+        logWriter.add("");
 
-            for(int x = 0; x < runtimes.length; x++){					
-                    logWriter.add(Long.toString(runtimes[x]));
-            }
+                for(int x = 0; x < runtimes.length; x++){					
+                        logWriter.add(Long.toString(runtimes[x]));
+                }
 
-            long testEnd = System.nanoTime();
-            logWriter.add(Long.toString(testStart));
-            logWriter.add(Long.toString(testEnd));
-            logWriter.add(Long.toString(testEnd - testStart));
+                long testEnd = System.nanoTime();
+                logWriter.add(Long.toString(testStart));
+                logWriter.add(Long.toString(testEnd));
+                logWriter.add(Long.toString(testEnd - testStart));
 
 
-    logWriter.writeFile(filepath);
-    printRuntimes();
+        logWriter.writeFile(filepath);
+        printRuntimes();
     }
 
 
