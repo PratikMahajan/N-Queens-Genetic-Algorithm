@@ -2,13 +2,11 @@
 Team Member - Pratik Mahajan, Mansi Raghuwanshi, Varad Desai
 
 ## Introduction
-<--some text here-->
+Genetic Algorithms are a family of algorithms whose purpose is to solve problems more efficiently than usual standard algorithms by using natural science metaphors with parts of the algorithm being strongly inspired by natural evolutionary behavior; such as the concept of mutation, crossover and natural selection.
 
 ## Problem Statement
-<--some text here-->
+In 1848, A German Chess player Max Bezzel composed the 8-Queens Problem which aims to place 8 Queens in the chess board in such a way that no two Queens can attack each other. In 1850 Franz Nauck gave the 1st solution to this problem and generalized the problem to N-Queen problem for N non- attacking Queens on an N x N Chessboard. Time complexity of an N-Queen problem is O(n!). Here, we are proposing a heuristic approach to obtain the best solutions for this problem. We are depicting all the arrangements of an N x N board as an N-tuple (c1, c2, c3… cN), where ci represents the position of the queen to be in i th column and c th row. Fig.1 shows an arrangement of 8 x 8 chessboard and its 8-tuple representation.
 
-## Implementation
-<--some text here-->
 
 ## How to run the project
 Run the RunGeneticNQueens.java (Main for the program )
@@ -22,6 +20,7 @@ To run the test cases
 2. https://www.geeksforgeeks.org/n-queen-problem-backtracking-3/
 3. https://arxiv.org/pdf/1802.02006.pdf
 4. https://kushalvyas.github.io/gen_8Q.html
-5. https://www.kaggle.com/mrknoot/genetic-algorithms-solving-the-n-queens-problem
-6. https://datajenius.com/articles/solving-n-queens-with-genetic-algorithms
-7. https://ieeexplore.ieee.org/document/6802550
+5. http://mnemstudio.org/genetic-algorithms-n-queens-example-1.htm
+6. https://www.kaggle.com/mrknoot/genetic-algorithms-solving-the-n-queens-problem
+7. https://datajenius.com/articles/solving-n-queens-with-genetic-algorithms
+8. https://ieeexplore.ieee.org/document/6802550

@@ -2,7 +2,7 @@ Genetic Algorithm
 Parameters
 MAX_LENGTH/N: 8
 STARTING_POPULATION: 40
-MAX_EPOCHS: 1000
+MAX_EPOCHS: 3000
 MATING_PROBABILITY: 0.7
 MUTATION_RATE: 0.001
 MIN_SELECTED_PARENTS: 10
@@ -12,7 +12,7 @@ MINIMUM_SHUFFLES: 8
 MAXIMUM_SHUFFLES: 20
 
 Run: 1
-Runtime in nanoseconds: 8107677
+Runtime in nanoseconds: 3583679
 Found at epoch: 24
 Population size: 718
 
@@ -35,7 +35,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 2
-Runtime in nanoseconds: 4969620
+Runtime in nanoseconds: 5900392
 Found at epoch: 24
 Population size: 718
 
@@ -58,7 +58,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 3
-Runtime in nanoseconds: 7087799
+Runtime in nanoseconds: 4462608
 Found at epoch: 24
 Population size: 718
 
@@ -81,7 +81,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 4
-Runtime in nanoseconds: 5864951
+Runtime in nanoseconds: 4132092
 Found at epoch: 24
 Population size: 718
 
@@ -104,7 +104,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 5
-Runtime in nanoseconds: 3742819
+Runtime in nanoseconds: 2577511
 Found at epoch: 24
 Population size: 718
 
@@ -127,7 +127,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 6
-Runtime in nanoseconds: 3677409
+Runtime in nanoseconds: 2168304
 Found at epoch: 24
 Population size: 718
 
@@ -150,7 +150,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 7
-Runtime in nanoseconds: 4548487
+Runtime in nanoseconds: 2885273
 Found at epoch: 24
 Population size: 718
 
@@ -173,7 +173,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 8
-Runtime in nanoseconds: 5503945
+Runtime in nanoseconds: 2626265
 Found at epoch: 24
 Population size: 718
 
@@ -196,7 +196,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 9
-Runtime in nanoseconds: 4974110
+Runtime in nanoseconds: 2867257
 Found at epoch: 24
 Population size: 718
 
@@ -219,7 +219,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 10
-Runtime in nanoseconds: 7783375
+Runtime in nanoseconds: 3627898
 Found at epoch: 24
 Population size: 718
 
@@ -242,7 +242,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 11
-Runtime in nanoseconds: 13206375
+Runtime in nanoseconds: 3831365
 Found at epoch: 24
 Population size: 718
 
@@ -265,7 +265,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 12
-Runtime in nanoseconds: 6454336
+Runtime in nanoseconds: 3815461
 Found at epoch: 24
 Population size: 718
 
@@ -288,7 +288,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 13
-Runtime in nanoseconds: 5994567
+Runtime in nanoseconds: 3965939
 Found at epoch: 24
 Population size: 718
 
@@ -311,7 +311,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 14
-Runtime in nanoseconds: 4514114
+Runtime in nanoseconds: 2988537
 Found at epoch: 24
 Population size: 718
 
@@ -334,7 +334,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 15
-Runtime in nanoseconds: 5978357
+Runtime in nanoseconds: 2132968
 Found at epoch: 24
 Population size: 718
 
@@ -357,7 +357,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 16
-Runtime in nanoseconds: 7711517
+Runtime in nanoseconds: 2121366
 Found at epoch: 24
 Population size: 718
 
@@ -380,7 +380,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 17
-Runtime in nanoseconds: 8721556
+Runtime in nanoseconds: 2373010
 Found at epoch: 24
 Population size: 718
 
@@ -403,7 +403,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 18
-Runtime in nanoseconds: 7655262
+Runtime in nanoseconds: 3123543
 Found at epoch: 24
 Population size: 718
 
@@ -426,7 +426,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 19
-Runtime in nanoseconds: 9214614
+Runtime in nanoseconds: 4678802
 Found at epoch: 24
 Population size: 718
 
@@ -449,7 +449,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 20
-Runtime in nanoseconds: 5882533
+Runtime in nanoseconds: 6518943
 Found at epoch: 24
 Population size: 718
 
@@ -472,7 +472,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 21
-Runtime in nanoseconds: 9478659
+Runtime in nanoseconds: 3967196
 Found at epoch: 24
 Population size: 718
 
@@ -495,7 +495,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 22
-Runtime in nanoseconds: 6490923
+Runtime in nanoseconds: 3308563
 Found at epoch: 24
 Population size: 718
 
@@ -518,7 +518,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 23
-Runtime in nanoseconds: 7081974
+Runtime in nanoseconds: 3505631
 Found at epoch: 24
 Population size: 718
 
@@ -541,7 +541,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 24
-Runtime in nanoseconds: 6580892
+Runtime in nanoseconds: 3649260
 Found at epoch: 24
 Population size: 718
 
@@ -564,7 +564,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 25
-Runtime in nanoseconds: 8047394
+Runtime in nanoseconds: 2111246
 Found at epoch: 24
 Population size: 718
 
@@ -587,7 +587,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 26
-Runtime in nanoseconds: 8851252
+Runtime in nanoseconds: 2336246
 Found at epoch: 24
 Population size: 718
 
@@ -610,7 +610,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 27
-Runtime in nanoseconds: 6283858
+Runtime in nanoseconds: 2705638
 Found at epoch: 24
 Population size: 718
 
@@ -633,7 +633,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 28
-Runtime in nanoseconds: 5252939
+Runtime in nanoseconds: 4804574
 Found at epoch: 24
 Population size: 718
 
@@ -656,7 +656,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 29
-Runtime in nanoseconds: 5169644
+Runtime in nanoseconds: 14258798
 Found at epoch: 24
 Population size: 718
 
@@ -679,7 +679,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 30
-Runtime in nanoseconds: 6106192
+Runtime in nanoseconds: 4696110
 Found at epoch: 24
 Population size: 718
 
@@ -702,7 +702,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 31
-Runtime in nanoseconds: 4891281
+Runtime in nanoseconds: 2862042
 Found at epoch: 24
 Population size: 718
 
@@ -725,7 +725,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 32
-Runtime in nanoseconds: 6016566
+Runtime in nanoseconds: 3631145
 Found at epoch: 24
 Population size: 718
 
@@ -748,7 +748,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 33
-Runtime in nanoseconds: 6813800
+Runtime in nanoseconds: 2443155
 Found at epoch: 24
 Population size: 718
 
@@ -771,7 +771,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 34
-Runtime in nanoseconds: 4116073
+Runtime in nanoseconds: 3728178
 Found at epoch: 24
 Population size: 718
 
@@ -794,7 +794,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 35
-Runtime in nanoseconds: 3530267
+Runtime in nanoseconds: 3243778
 Found at epoch: 24
 Population size: 718
 
@@ -817,7 +817,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 36
-Runtime in nanoseconds: 2859702
+Runtime in nanoseconds: 3052405
 Found at epoch: 24
 Population size: 718
 
@@ -840,7 +840,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 37
-Runtime in nanoseconds: 4913728
+Runtime in nanoseconds: 3685979
 Found at epoch: 24
 Population size: 718
 
@@ -863,7 +863,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 38
-Runtime in nanoseconds: 4840229
+Runtime in nanoseconds: 3824510
 Found at epoch: 24
 Population size: 718
 
@@ -886,7 +886,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 39
-Runtime in nanoseconds: 5917122
+Runtime in nanoseconds: 4281874
 Found at epoch: 24
 Population size: 718
 
@@ -909,7 +909,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 40
-Runtime in nanoseconds: 9069614
+Runtime in nanoseconds: 4519272
 Found at epoch: 24
 Population size: 718
 
@@ -932,7 +932,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 41
-Runtime in nanoseconds: 7950265
+Runtime in nanoseconds: 4538627
 Found at epoch: 24
 Population size: 718
 
@@ -955,7 +955,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 42
-Runtime in nanoseconds: 6332131
+Runtime in nanoseconds: 6381928
 Found at epoch: 24
 Population size: 718
 
@@ -978,7 +978,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 43
-Runtime in nanoseconds: 4662718
+Runtime in nanoseconds: 3368481
 Found at epoch: 24
 Population size: 718
 
@@ -1001,7 +1001,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 44
-Runtime in nanoseconds: 6908512
+Runtime in nanoseconds: 3949383
 Found at epoch: 24
 Population size: 718
 
@@ -1024,7 +1024,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 45
-Runtime in nanoseconds: 5996594
+Runtime in nanoseconds: 6175396
 Found at epoch: 24
 Population size: 718
 
@@ -1047,7 +1047,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 46
-Runtime in nanoseconds: 3722948
+Runtime in nanoseconds: 4798043
 Found at epoch: 24
 Population size: 718
 
@@ -1070,7 +1070,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 47
-Runtime in nanoseconds: 6966167
+Runtime in nanoseconds: 2850097
 Found at epoch: 24
 Population size: 718
 
@@ -1093,7 +1093,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 48
-Runtime in nanoseconds: 5745954
+Runtime in nanoseconds: 2185931
 Found at epoch: 24
 Population size: 718
 
@@ -1116,7 +1116,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 49
-Runtime in nanoseconds: 3655793
+Runtime in nanoseconds: 4663297
 Found at epoch: 24
 Population size: 718
 
@@ -1139,7 +1139,7 @@ Population size: 718
 . . . * . . . . 
 
 Run: 50
-Runtime in nanoseconds: 3489889
+Runtime in nanoseconds: 3043950
 Found at epoch: 24
 Population size: 718
 
@@ -1163,56 +1163,56 @@ Population size: 718
 
 Runtime summary
 
-8107677
-4969620
-7087799
-5864951
-3742819
-3677409
-4548487
-5503945
-4974110
-7783375
-13206375
-6454336
-5994567
-4514114
-5978357
-7711517
-8721556
-7655262
-9214614
-5882533
-9478659
-6490923
-7081974
-6580892
-8047394
-8851252
-6283858
-5252939
-5169644
-6106192
-4891281
-6016566
-6813800
-4116073
-3530267
-2859702
-4913728
-4840229
-5917122
-9069614
-7950265
-6332131
-4662718
-6908512
-5996594
-3722948
-6966167
-5745954
-3655793
-3489889
-8877521875059
-8877839417968
-317542909
+3583679
+5900392
+4462608
+4132092
+2577511
+2168304
+2885273
+2626265
+2867257
+3627898
+3831365
+3815461
+3965939
+2988537
+2132968
+2121366
+2373010
+3123543
+4678802
+6518943
+3967196
+3308563
+3505631
+3649260
+2111246
+2336246
+2705638
+4804574
+14258798
+4696110
+2862042
+3631145
+2443155
+3728178
+3243778
+3052405
+3685979
+3824510
+4281874
+4519272
+4538627
+6381928
+3368481
+3949383
+6175396
+4798043
+2850097
+2185931
+4663297
+3043950
+8879360769404
+8879557454405
+196685001
