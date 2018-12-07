@@ -128,7 +128,7 @@ public class GeneticAlgorithm {
                     resetSelection();
 
                     epoch++;
-                    System.out.println("Epoch: " + epoch);
+                   // System.out.println("Epoch: " + epoch);
             }
 
             if(epoch >= MAX_EPOCHS) {
@@ -145,7 +145,7 @@ public class GeneticAlgorithm {
                     }
             }
             System.out.println("Completed");
-            System.out.println(mutations + " mutations in " + childCount + " offspring."); 
+            System.out.print("Mutations: " +mutations + "OffSprings: " + childCount); 
 
             return stop;
 
