@@ -13,7 +13,7 @@ Note the mutation's are randomly generated so in order to test this please uncom
 Random.setSeed(20) -- will always generate the same random values and is introduced just for testing the genetic
 algorithm , since otherwise it always generates random population and chromosomes and testing with the random population is very difficult
 
-##Test cases 
+## Test cases 
 Random Seed has been set to 20 for testing purpose. Please comment Line 95-96 in GeneticAlgorithm.java to get correct output for main()
 
 
