@@ -93,7 +93,8 @@ public class GeneticAlgorithm {
             population = new ArrayList<Chromosome>();
             solutions = new ArrayList<Chromosome>();
             rand = new Random();
-            rand.setSeed(20);
+         //uncomment only when testing the the mutation and chromosome test cases   
+         //   rand.setSeed(20);
             nextMutation = 0;
             childCount = 0;                 
             mutations = 0;
