@@ -48,7 +48,7 @@ public class GeneticAlgorithmTest {
     //Note the mutation's are randomly generated so in order to test this please uncomment the rand.setSeed() 
     //in GeneticAlgorithm.java 
     //random.setSeed(20) -- will always generate the same random values and is introduced just for testing the genetic
-    
+    //algorithm , since otherwise it always generates random population and chromosomes
      @Test
     public void testMutation() {
        
