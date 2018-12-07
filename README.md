@@ -17,6 +17,9 @@ algorithm , since otherwise it always generates random population and chromosome
 Random Seed has been set to 20 for testing purpose. Please comment Line 95-96 in GeneticAlgorithm.java to get correct output for main()
 
 
+#### Read Documentation for In-Depth Analysis
+
+
 ## References
 1. https://developers.google.com/optimization/cp/queens
 2. https://www.geeksforgeeks.org/n-queen-problem-backtracking-3/
