@@ -11,7 +11,7 @@ Team Member - Pratik Mahajan, Mansi Raghuwanshi, Varad Desai
 <--some text here-->
 
 ## How to run the project
-
+Run the RunGeneticNQueens.java (Main for the program )
 ## References
 1. https://developers.google.com/optimization/cp/queens
 2. https://www.geeksforgeeks.org/n-queen-problem-backtracking-3/
