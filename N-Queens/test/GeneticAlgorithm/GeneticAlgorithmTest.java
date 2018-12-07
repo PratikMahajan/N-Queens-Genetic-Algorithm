@@ -44,6 +44,19 @@ public class GeneticAlgorithmTest {
         assertEquals(expResult, result);
        
     }
+    
+    @Test
+    public void testMutation() {
+       
+        RunGeneticNQueens tester = new RunGeneticNQueens();
+            
+        tester.test(8, 0.001, 1000);
+        int expResult = 41;
+        int result = tester.ga.getMutations();
+        
+        assertEquals(expResult, result);
+       
+    }
     /**
      * Test of printSolution method, of class GeneticAlgorithm.
      */

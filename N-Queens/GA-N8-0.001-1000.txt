@@ -12,593 +12,601 @@ MINIMUM_SHUFFLES: 8
 MAXIMUM_SHUFFLES: 20
 
 Run: 1
-Runtime in nanoseconds: 31678704
-Found at epoch: 35
-Population size: 1032
+Runtime in nanoseconds: 817365
+Found at epoch: 5
+Population size: 188
 
-. . . . * . . . 
-. . * . . . . . 
-. . . . . . . * 
 . . . * . . . . 
-. . . . . . * . 
+. . . . . . . * 
 * . . . . . . . 
-. . . . . * . . 
+. . . . * . . . 
+. . . . . . * . 
 . * . . . . . . 
+. . . . . * . . 
+. . * . . . . . 
 
 Run: 2
-Runtime in nanoseconds: 3681668
-Found at epoch: 8
-Population size: 286
+Runtime in nanoseconds: 5378458
+Found at epoch: 35
+Population size: 1046
 
-. . . . . . * . 
 . * . . . . . . 
-. . . * . . . . 
-* . . . . . . . 
 . . . . . . . * 
-. . . . * . . . 
-. . * . . . . . 
 . . . . . * . . 
+* . . . . . . . 
+. . * . . . . . 
+. . . . * . . . 
+. . . . . . * . 
+. . . * . . . . 
 
 Run: 3
-Runtime in nanoseconds: 11595085
-Found at epoch: 17
-Population size: 524
+Runtime in nanoseconds: 1521187
+Found at epoch: 11
+Population size: 362
 
+. * . . . . . . 
 . . . . . * . . 
+* . . . . . . . 
+. . . . . . * . 
+. . . * . . . . 
+. . . . . . . * 
 . . * . . . . . 
 . . . . * . . . 
-. . . . . . * . 
-* . . . . . . . 
-. . . * . . . . 
-. * . . . . . . 
-. . . . . . . * 
 
 Run: 4
-Runtime in nanoseconds: 4422514
-Found at epoch: 11
-Population size: 330
+Runtime in nanoseconds: 6899645
+Found at epoch: 40
+Population size: 1188
 
-. * . . . . . . 
-. . . . . . * . 
 . . * . . . . . 
 . . . . . * . . 
-. . . . . . . * 
-. . . . * . . . 
-* . . . . . . . 
 . . . * . . . . 
-
-. . . . * . . . 
 . * . . . . . . 
 . . . . . . . * 
-* . . . . . . . 
-. . . * . . . . 
+. . . . * . . . 
 . . . . . . * . 
-. . * . . . . . 
-. . . . . * . . 
+* . . . . . . . 
 
 Run: 5
-Runtime in nanoseconds: 7939158
-Found at epoch: 19
-Population size: 578
+Runtime in nanoseconds: 1334300
+Found at epoch: 10
+Population size: 320
 
-. . . . * . . . 
+. . * . . . . . 
+. . . . . . * . 
 . * . . . . . . 
 . . . . . . . * 
+. . . . * . . . 
 * . . . . . . . 
 . . . * . . . . 
-. . . . . . * . 
-. . * . . . . . 
 . . . . . * . . 
 
 Run: 6
-Runtime in nanoseconds: 990147
-Found at epoch: 1
-Population size: 66
+Runtime in nanoseconds: 945717
+Found at epoch: 4
+Population size: 156
 
-. . . . * . . . 
-. . * . . . . . 
-. . . . . . . * 
 . . . * . . . . 
 . . . . . . * . 
-* . . . . . . . 
-. . . . . * . . 
+. . . . * . . . 
 . * . . . . . . 
+. . . . . * . . 
+* . . . . . . . 
+. . * . . . . . 
+. . . . . . . * 
+
+. . . * . . . . 
+. * . . . . . . 
+. . . . . . . * 
+. . . . * . . . 
+. . . . . . * . 
+* . . . . . . . 
+. . * . . . . . 
+. . . . . * . . 
 
 Run: 7
-Runtime in nanoseconds: 1117441
-Found at epoch: 3
-Population size: 118
-
-. . * . . . . . 
-. . . . * . . . 
-. . . . . . * . 
-* . . . . . . . 
-. . . * . . . . 
-. * . . . . . . 
-. . . . . . . * 
-. . . . . * . . 
-
-Run: 8
-Runtime in nanoseconds: 12680439
-Found at epoch: 35
-Population size: 1054
-
-. . . * . . . . 
-. . . . . . * . 
-. . . . * . . . 
-. . * . . . . . 
-* . . . . . . . 
-. . . . . * . . 
-. . . . . . . * 
-. * . . . . . . 
-
-Run: 9
-Runtime in nanoseconds: 1611104
-Found at epoch: 5
-Population size: 186
-
-. . . . . . * . 
-. * . . . . . . 
-. . . . . * . . 
-. . * . . . . . 
-* . . . . . . . 
-. . . * . . . . 
-. . . . . . . * 
-. . . . * . . . 
-
-Run: 10
-Runtime in nanoseconds: 1476404
-Found at epoch: 6
-Population size: 214
-
-. . . . . . * . 
-* . . . . . . . 
-. . * . . . . . 
-. . . . . . . * 
-. . . . . * . . 
-. . . * . . . . 
-. * . . . . . . 
-. . . . * . . . 
-
-. . . . * . . . 
-. . . . . . * . 
-* . . . . . . . 
-. . * . . . . . 
-. . . . . . . * 
-. . . . . * . . 
-. . . * . . . . 
-. * . . . . . . 
-
-Run: 11
-Runtime in nanoseconds: 916803
-Found at epoch: 4
-Population size: 148
-
-. . . . . * . . 
-. . . * . . . . 
-. . . . . . * . 
-* . . . . . . . 
-. . * . . . . . 
-. . . . * . . . 
-. * . . . . . . 
-. . . . . . . * 
-
-Run: 12
-Runtime in nanoseconds: 754247
-Found at epoch: 6
-Population size: 212
-
-. . . * . . . . 
-. * . . . . . . 
-. . . . * . . . 
-. . . . . . . * 
-. . . . . * . . 
-* . . . . . . . 
-. . * . . . . . 
-. . . . . . * . 
-
-Run: 13
-Runtime in nanoseconds: 910104
-Found at epoch: 7
-Population size: 238
-
-. . . * . . . . 
-. * . . . . . . 
-. . . . . . * . 
-. . * . . . . . 
-. . . . . * . . 
-. . . . . . . * 
-. . . . * . . . 
-* . . . . . . . 
-
-Run: 14
-Runtime in nanoseconds: 1036692
-Found at epoch: 8
-Population size: 244
-
-. * . . . . . . 
-. . . * . . . . 
-. . . . . * . . 
-. . . . . . . * 
-. . * . . . . . 
-* . . . . . . . 
-. . . . . . * . 
-. . . . * . . . 
-
-Run: 15
-Runtime in nanoseconds: 891062
-Found at epoch: 2
-Population size: 90
-
-. * . . . . . . 
-. . . . . . * . 
-. . . . * . . . 
-. . . . . . . * 
-* . . . . . . . 
-. . . * . . . . 
-. . . . . * . . 
-. . * . . . . . 
-
-. . * . . . . . 
-. . . . . * . . 
-. . . . . . . * 
-. * . . . . . . 
-. . . * . . . . 
-* . . . . . . . 
-. . . . . . * . 
-. . . . * . . . 
-
-Run: 16
-Runtime in nanoseconds: 4663351
-Found at epoch: 24
-Population size: 748
-
-. * . . . . . . 
-. . . . . . * . 
-. . * . . . . . 
-. . . . . * . . 
-. . . . . . . * 
-. . . . * . . . 
-* . . . . . . . 
-. . . * . . . . 
-
-Run: 17
-Runtime in nanoseconds: 1392835
-Found at epoch: 10
-Population size: 308
-
-. . . * . . . . 
-. * . . . . . . 
-. . . . . . . * 
-. . . . * . . . 
-. . . . . . * . 
-* . . . . . . . 
-. . * . . . . . 
-. . . . . * . . 
-
-Run: 18
-Runtime in nanoseconds: 2562463
-Found at epoch: 20
-Population size: 582
-
-. . * . . . . . 
-. . . . * . . . 
-. * . . . . . . 
-. . . . . . . * 
-. . . . . * . . 
-. . . * . . . . 
-. . . . . . * . 
-* . . . . . . . 
-
-Run: 19
-Runtime in nanoseconds: 456638
-Found at epoch: 2
-Population size: 100
-
-. . . * . . . . 
-. . . . . * . . 
-* . . . . . . . 
-. . . . * . . . 
-. * . . . . . . 
-. . . . . . . * 
-. . * . . . . . 
-. . . . . . * . 
-
-Run: 20
-Runtime in nanoseconds: 66820455
-Found at epoch: 14
-Population size: 428
-
-. . . . . * . . 
-. . . . . . . * 
-. * . . . . . . 
-. . . * . . . . 
-* . . . . . . . 
-. . . . . . * . 
-. . . . * . . . 
-. . * . . . . . 
-
-Run: 21
-Runtime in nanoseconds: 801849
+Runtime in nanoseconds: 641410
 Found at epoch: 3
 Population size: 126
 
 . . . . . * . . 
 . . * . . . . . 
+. . . . . . * . 
+. * . . . . . . 
+. . . * . . . . 
+. . . . . . . * 
+* . . . . . . . 
+. . . . * . . . 
+
+Run: 8
+Runtime in nanoseconds: 3132997
+Found at epoch: 7
+Population size: 252
+
+* . . . . . . . 
+. . . . * . . . 
+. . . . . . . * 
+. . . . . * . . 
+. . * . . . . . 
+. . . . . . * . 
+. * . . . . . . 
+. . . * . . . . 
+
+Run: 9
+Runtime in nanoseconds: 2143908
+Found at epoch: 17
+Population size: 514
+
+. . . . * . . . 
+. * . . . . . . 
+. . . . . . . * 
+* . . . . . . . 
+. . . * . . . . 
+. . . . . . * . 
+. . * . . . . . 
+. . . . . * . . 
+
+Run: 10
+Runtime in nanoseconds: 471096
+Found at epoch: 1
+Population size: 74
+
+. . . . * . . . 
+. * . . . . . . 
+. . . . . . . * 
+* . . . . . . . 
+. . . * . . . . 
+. . . . . . * . 
+. . * . . . . . 
+. . . . . * . . 
+
+Run: 11
+Runtime in nanoseconds: 41828414
+Found at epoch: 13
+Population size: 414
+
+* . . . . . . . 
+. . . . * . . . 
+. . . . . . . * 
+. . . . . * . . 
+. . * . . . . . 
+. . . . . . * . 
+. * . . . . . . 
+. . . * . . . . 
+
+Run: 12
+Runtime in nanoseconds: 7875687
+Found at epoch: 34
+Population size: 1018
+
+. . . . * . . . 
+* . . . . . . . 
+. . . * . . . . 
+. . . . . * . . 
+. . . . . . . * 
+. * . . . . . . 
+. . . . . . * . 
+. . * . . . . . 
+
+Run: 13
+Runtime in nanoseconds: 2834683
+Found at epoch: 21
+Population size: 604
+
+. . . * . . . . 
+. * . . . . . . 
+. . . . . . * . 
+. . . . * . . . 
+* . . . . . . . 
+. . . . . . . * 
+. . . . . * . . 
+. . * . . . . . 
+
+Run: 14
+Runtime in nanoseconds: 3709877
+Found at epoch: 25
+Population size: 736
+
+. . . . . * . . 
+. . . * . . . . 
+* . . . . . . . 
+. . . . * . . . 
+. . . . . . . * 
+. * . . . . . . 
+. . . . . . * . 
+. . * . . . . . 
+
+Run: 15
+Runtime in nanoseconds: 2142497
+Found at epoch: 14
+Population size: 416
+
+. . . . . * . . 
+. * . . . . . . 
+. . . . . . * . 
+* . . . . . . . 
+. . * . . . . . 
+. . . . * . . . 
+. . . . . . . * 
+. . . * . . . . 
+
+Run: 16
+Runtime in nanoseconds: 774346
+Found at epoch: 2
+Population size: 100
+
+. . . . * . . . 
+. . . . . . * . 
+. . . * . . . . 
+* . . . . . . . 
+. . * . . . . . 
+. . . . . . . * 
+. . . . . * . . 
+. * . . . . . . 
+
+. . * . . . . . 
+. . . . . . * . 
+. * . . . . . . 
+. . . . . . . * 
+. . . . . * . . 
+. . . * . . . . 
+* . . . . . . . 
+. . . . * . . . 
+
+Run: 17
+Runtime in nanoseconds: 4974007
+Found at epoch: 34
+Population size: 974
+
+. . * . . . . . 
+. . . . . * . . 
+. * . . . . . . 
+. . . . * . . . 
+. . . . . . . * 
+* . . . . . . . 
+. . . . . . * . 
+. . . * . . . . 
+
+Run: 18
+Runtime in nanoseconds: 34094127
+Found at epoch: 64
+Population size: 1850
+
+. . . . . . * . 
+. * . . . . . . 
+. . . * . . . . 
 * . . . . . . . 
 . . . . . . . * 
 . . . . * . . . 
-. * . . . . . . 
-. . . * . . . . 
+. . * . . . . . 
+. . . . . * . . 
+
+. . . . * . . . 
 . . . . . . * . 
+. * . . . . . . 
+. . . . . * . . 
+. . * . . . . . 
+* . . . . . . . 
+. . . * . . . . 
+. . . . . . . * 
+
+Run: 19
+Runtime in nanoseconds: 1927048
+Found at epoch: 15
+Population size: 478
+
+. . . . . . * . 
+. . . * . . . . 
+. * . . . . . . 
+. . . . . . . * 
+. . . . . * . . 
+* . . . . . . . 
+. . * . . . . . 
+. . . . * . . . 
+
+. . * . . . . . 
+. . . . . * . . 
+. . . * . . . . 
+. * . . . . . . 
+. . . . . . . * 
+. . . . * . . . 
+. . . . . . * . 
+* . . . . . . . 
+
+Run: 20
+Runtime in nanoseconds: 2929890
+Found at epoch: 25
+Population size: 722
+
+. . . * . . . . 
+. * . . . . . . 
+. . . . . . * . 
+. . . . * . . . 
+* . . . . . . . 
+. . . . . . . * 
+. . . . . * . . 
+. . * . . . . . 
+
+Run: 21
+Runtime in nanoseconds: 5542424
+Found at epoch: 31
+Population size: 938
+
+. . . * . . . . 
+* . . . . . . . 
+. . . . * . . . 
+. . . . . . . * 
+. * . . . . . . 
+. . . . . . * . 
+. . * . . . . . 
+. . . . . * . . 
 
 Run: 22
-Runtime in nanoseconds: 525398
-Found at epoch: 3
-Population size: 118
+Runtime in nanoseconds: 472506
+Found at epoch: 2
+Population size: 98
 
-. . . . . * . . 
-. . * . . . . . 
+. . . . * . . . 
 * . . . . . . . 
-. . . . . . . * 
 . . . * . . . . 
+. . . . . * . . 
+. . . . . . . * 
 . * . . . . . . 
 . . . . . . * . 
-. . . . * . . . 
+. . * . . . . . 
 
 Run: 23
-Runtime in nanoseconds: 1733109
-Found at epoch: 12
-Population size: 372
+Runtime in nanoseconds: 587812
+Found at epoch: 4
+Population size: 158
 
-. . * . . . . . 
-. . . . . * . . 
-. * . . . . . . 
-. . . . . . * . 
 . . . . * . . . 
-* . . . . . . . 
 . . . . . . . * 
 . . . * . . . . 
+* . . . . . . . 
+. . . . . . * . 
+. * . . . . . . 
+. . . . . * . . 
+. . * . . . . . 
 
 Run: 24
-Runtime in nanoseconds: 18223920
-Found at epoch: 52
-Population size: 1476
+Runtime in nanoseconds: 1126962
+Found at epoch: 11
+Population size: 328
 
-. . . . * . . . 
-. * . . . . . . 
-. . . * . . . . 
-. . . . . . * . 
 . . * . . . . . 
-. . . . . . . * 
 . . . . . * . . 
+. . . * . . . . 
+. * . . . . . . 
+. . . . . . . * 
+. . . . * . . . 
+. . . . . . * . 
 * . . . . . . . 
 
 Run: 25
-Runtime in nanoseconds: 970401
-Found at epoch: 6
-Population size: 214
+Runtime in nanoseconds: 1700669
+Found at epoch: 15
+Population size: 470
 
+. . . . * . . . 
 . . . . . . * . 
+. . . * . . . . 
 * . . . . . . . 
 . . * . . . . . 
 . . . . . . . * 
 . . . . . * . . 
-. . . * . . . . 
 . * . . . . . . 
-. . . . * . . . 
 
 Run: 26
-Runtime in nanoseconds: 5267736
-Found at epoch: 32
-Population size: 954
+Runtime in nanoseconds: 4230339
+Found at epoch: 27
+Population size: 788
 
-. . . * . . . . 
-. . . . . * . . 
-. . . . . . . * 
 . * . . . . . . 
-. . . . . . * . 
+. . . . . . . * 
+. . . . . * . . 
 * . . . . . . . 
 . . * . . . . . 
 . . . . * . . . 
+. . . . . . * . 
+. . . * . . . . 
 
 Run: 27
-Runtime in nanoseconds: 1594884
-Found at epoch: 10
-Population size: 342
+Runtime in nanoseconds: 1336064
+Found at epoch: 12
+Population size: 374
 
-. . . . * . . . 
-. . . . . . * . 
-* . . . . . . . 
 . . * . . . . . 
-. . . . . . . * 
 . . . . . * . . 
 . . . * . . . . 
 . * . . . . . . 
+. . . . . . . * 
+. . . . * . . . 
+. . . . . . * . 
+* . . . . . . . 
 
 Run: 28
-Runtime in nanoseconds: 3548731
-Found at epoch: 21
-Population size: 630
+Runtime in nanoseconds: 1998983
+Found at epoch: 15
+Population size: 464
 
-. . . . . . * . 
-. * . . . . . . 
-. . . . . * . . 
-. . * . . . . . 
-* . . . . . . . 
-. . . * . . . . 
-. . . . . . . * 
 . . . . * . . . 
+. . . . . . * . 
+. . . * . . . . 
+* . . . . . . . 
+. . * . . . . . 
+. . . . . . . * 
+. . . . . * . . 
+. * . . . . . . 
 
 Run: 29
-Runtime in nanoseconds: 3023333
-Found at epoch: 19
-Population size: 566
+Runtime in nanoseconds: 9860213
+Found at epoch: 54
+Population size: 1546
 
+. * . . . . . . 
+. . . . . * . . 
+. . . . . . . * 
 . . * . . . . . 
-. . . . * . . . 
-. . . . . . * . 
 * . . . . . . . 
 . . . * . . . . 
-. * . . . . . . 
-. . . . . . . * 
-. . . . . * . . 
+. . . . . . * . 
+. . . . * . . . 
 
 Run: 30
-Runtime in nanoseconds: 4884794
-Found at epoch: 28
-Population size: 810
+Runtime in nanoseconds: 26597855
+Found at epoch: 2
+Population size: 106
 
-. . . * . . . . 
-. . . . . . * . 
-. . . . * . . . 
-. * . . . . . . 
 . . . . . * . . 
-* . . . . . . . 
 . . * . . . . . 
+. . . . . . * . 
+. * . . . . . . 
 . . . . . . . * 
+. . . . * . . . 
+* . . . . . . . 
+. . . * . . . . 
 
 Run: 31
-Runtime in nanoseconds: 2653791
-Found at epoch: 17
-Population size: 496
+Runtime in nanoseconds: 495073
+Found at epoch: 2
+Population size: 102
 
+. . . . * . . . 
+. . . . . . * . 
+. * . . . . . . 
 . . . . . * . . 
 . . * . . . . . 
-. . . . * . . . 
-. . . . . . . * 
 * . . . . . . . 
 . . . * . . . . 
-. * . . . . . . 
-. . . . . . * . 
+. . . . . . . * 
 
 Run: 32
-Runtime in nanoseconds: 2441163
-Found at epoch: 15
-Population size: 468
+Runtime in nanoseconds: 5735306
+Found at epoch: 39
+Population size: 1100
 
-. . * . . . . . 
-. . . . * . . . 
-. . . . . . . * 
 . . . * . . . . 
+. . . . . . . * 
 * . . . . . . . 
-. . . . . . * . 
-. * . . . . . . 
+. . * . . . . . 
 . . . . . * . . 
+. * . . . . . . 
+. . . . . . * . 
+. . . . * . . . 
 
 Run: 33
-Runtime in nanoseconds: 1728879
-Found at epoch: 9
-Population size: 294
+Runtime in nanoseconds: 1687622
+Found at epoch: 13
+Population size: 438
 
-. . * . . . . . 
-. . . . . * . . 
-. . . * . . . . 
-* . . . . . . . 
-. . . . . . . * 
 . . . . * . . . 
 . . . . . . * . 
+. . . * . . . . 
+* . . . . . . . 
+. . * . . . . . 
+. . . . . . . * 
+. . . . . * . . 
 . * . . . . . . 
 
 Run: 34
-Runtime in nanoseconds: 2918253
-Found at epoch: 18
-Population size: 572
+Runtime in nanoseconds: 2108646
+Found at epoch: 17
+Population size: 516
 
-. . . . * . . . 
-. . . . . . . * 
-. . . * . . . . 
-* . . . . . . . 
-. . . . . . * . 
-. * . . . . . . 
-. . . . . * . . 
 . . * . . . . . 
+. . . . . * . . 
+. . . * . . . . 
+. * . . . . . . 
+. . . . . . . * 
+. . . . * . . . 
+. . . . . . * . 
+* . . . . . . . 
 
 Run: 35
-Runtime in nanoseconds: 465101
-Found at epoch: 2
-Population size: 96
+Runtime in nanoseconds: 1604052
+Found at epoch: 13
+Population size: 414
 
-. . . . . * . . 
-. . * . . . . . 
-. . . . . . * . 
-. * . . . . . . 
 . . . * . . . . 
-. . . . . . . * 
+. . . . . * . . 
 * . . . . . . . 
 . . . . * . . . 
+. * . . . . . . 
+. . . . . . . * 
+. . * . . . . . 
+. . . . . . * . 
 
 Run: 36
-Runtime in nanoseconds: 2016966
-Found at epoch: 19
-Population size: 566
+Runtime in nanoseconds: 1375557
+Found at epoch: 11
+Population size: 350
 
-. . . . * . . . 
-. . . . . . . * 
 . . . * . . . . 
-* . . . . . . . 
 . . . . . . * . 
+. . . . * . . . 
 . * . . . . . . 
 . . . . . * . . 
+* . . . . . . . 
 . . * . . . . . 
+. . . . . . . * 
 
 Run: 37
-Runtime in nanoseconds: 11662082
-Found at epoch: 60
-Population size: 1724
+Runtime in nanoseconds: 2200327
+Found at epoch: 17
+Population size: 492
 
-. * . . . . . . 
-. . . . * . . . 
+. . . * . . . . 
 . . . . . . * . 
+. . . . * . . . 
+. * . . . . . . 
+. . . . . * . . 
 * . . . . . . . 
 . . * . . . . . 
 . . . . . . . * 
-. . . . . * . . 
-. . . * . . . . 
 
 Run: 38
-Runtime in nanoseconds: 1139304
-Found at epoch: 7
-Population size: 230
+Runtime in nanoseconds: 806434
+Found at epoch: 2
+Population size: 110
 
-. . . * . . . . 
+. . . . . * . . 
+. . * . . . . . 
+* . . . . . . . 
 . . . . . . * . 
 . . . . * . . . 
-. * . . . . . . 
-. . . . . * . . 
-* . . . . . . . 
-. . * . . . . . 
 . . . . . . . * 
+. * . . . . . . 
+. . . * . . . . 
+
+. . * . . . . . 
+. . . . . * . . 
+. * . . . . . . 
+. . . . * . . . 
+. . . . . . . * 
+* . . . . . . . 
+. . . . . . * . 
+. . . * . . . . 
 
 Run: 39
-Runtime in nanoseconds: 2192922
-Found at epoch: 11
-Population size: 372
+Runtime in nanoseconds: 736968
+Found at epoch: 5
+Population size: 172
 
-. . * . . . . . 
-. . . . . * . . 
-. . . . . . . * 
-* . . . . . . . 
 . . . * . . . . 
-. . . . . . * . 
-. . . . * . . . 
-. * . . . . . . 
-
-. . . . * . . . 
-. * . . . . . . 
 . . . . . * . . 
 * . . . . . . . 
-. . . . . . * . 
-. . . * . . . . 
+. . . . * . . . 
+. * . . . . . . 
 . . . . . . . * 
 . . * . . . . . 
+. . . . . . * . 
 
 Run: 40
-Runtime in nanoseconds: 1468648
-Found at epoch: 9
-Population size: 284
+Runtime in nanoseconds: 4396774
+Found at epoch: 30
+Population size: 896
 
-. . . . . * . . 
 . . . * . . . . 
 . * . . . . . . 
 . . . . . . . * 
@@ -606,199 +614,227 @@ Population size: 284
 . . . . . . * . 
 * . . . . . . . 
 . . * . . . . . 
+. . . . . * . . 
 
 Run: 41
-Runtime in nanoseconds: 1786707
-Found at epoch: 11
-Population size: 366
+Runtime in nanoseconds: 6468042
+Found at epoch: 40
+Population size: 1166
 
+. . * . . . . . 
 . . . . . * . . 
 . . . * . . . . 
 * . . . . . . . 
-. . . . * . . . 
 . . . . . . . * 
-. * . . . . . . 
+. . . . * . . . 
 . . . . . . * . 
-. . * . . . . . 
+. * . . . . . . 
 
 Run: 42
-Runtime in nanoseconds: 38234196
-Found at epoch: 21
-Population size: 628
+Runtime in nanoseconds: 1636493
+Found at epoch: 11
+Population size: 348
 
-. . . * . . . . 
+. . . . * . . . 
 . . . . . . * . 
+. * . . . . . . 
+. . . . . * . . 
 . . * . . . . . 
+* . . . . . . . 
+. . . * . . . . 
+. . . . . . . * 
+
+. . . . . * . . 
+. . . * . . . . 
+* . . . . . . . 
+. . . . * . . . 
 . . . . . . . * 
 . * . . . . . . 
-. . . . * . . . 
-* . . . . . . . 
-. . . . . * . . 
+. . . . . . * . 
+. . * . . . . . 
 
 Run: 43
-Runtime in nanoseconds: 1129430
-Found at epoch: 9
-Population size: 292
+Runtime in nanoseconds: 797971
+Found at epoch: 5
+Population size: 168
 
-. . * . . . . . 
-. . . . . * . . 
-. * . . . . . . 
 . . . . . . * . 
-* . . . . . . . 
-. . . * . . . . 
-. . . . . . . * 
 . . . . * . . . 
+. . * . . . . . 
+* . . . . . . . 
+. . . . . * . . 
+. . . . . . . * 
+. * . . . . . . 
+. . . * . . . . 
 
 Run: 44
-Runtime in nanoseconds: 8633108
-Found at epoch: 42
-Population size: 1212
+Runtime in nanoseconds: 4336124
+Found at epoch: 31
+Population size: 902
 
-. . . . * . . . 
-. . . . . . * . 
+. . . . . . . * 
+. . . * . . . . 
 * . . . . . . . 
 . . * . . . . . 
-. . . . . . . * 
 . . . . . * . . 
-. . . * . . . . 
 . * . . . . . . 
+. . . . . . * . 
+. . . . * . . . 
 
 Run: 45
-Runtime in nanoseconds: 2335379
-Found at epoch: 16
-Population size: 500
+Runtime in nanoseconds: 3431663
+Found at epoch: 25
+Population size: 746
 
-. . . . * . . . 
-. * . . . . . . 
 . . . . . . . * 
-* . . . . . . . 
+. * . . . . . . 
 . . . * . . . . 
+* . . . . . . . 
 . . . . . . * . 
+. . . . * . . . 
 . . * . . . . . 
 . . . . . * . . 
 
 Run: 46
-Runtime in nanoseconds: 864263
-Found at epoch: 4
-Population size: 160
+Runtime in nanoseconds: 845222
+Found at epoch: 2
+Population size: 100
 
-. . . * . . . . 
 . . . . . * . . 
+. . . * . . . . 
+. . . . . . * . 
+* . . . . . . . 
+. . . . . . . * 
+. * . . . . . . 
+. . . . * . . . 
+. . * . . . . . 
+
+. . . . . * . . 
+. . . * . . . . 
 * . . . . . . . 
 . . . . * . . . 
-. * . . . . . . 
 . . . . . . . * 
-. . * . . . . . 
+. * . . . . . . 
 . . . . . . * . 
+. . * . . . . . 
 
 Run: 47
-Runtime in nanoseconds: 2840678
-Found at epoch: 19
-Population size: 568
+Runtime in nanoseconds: 1293750
+Found at epoch: 10
+Population size: 334
 
 . . . * . . . . 
-. * . . . . . . 
-. . . . . . * . 
-. . * . . . . . 
-. . . . . * . . 
 . . . . . . . * 
 * . . . . . . . 
+. . * . . . . . 
+. . . . . * . . 
+. * . . . . . . 
+. . . . . . * . 
 . . . . * . . . 
 
 Run: 48
-Runtime in nanoseconds: 741552
-Found at epoch: 3
-Population size: 122
+Runtime in nanoseconds: 2902386
+Found at epoch: 21
+Population size: 632
 
 . . * . . . . . 
-. . . . . * . . 
+. . . . . . * . 
 . * . . . . . . 
-. . . . * . . . 
 . . . . . . . * 
+. . . . . * . . 
+. . . * . . . . 
+* . . . . . . . 
+. . . . * . . . 
+
+. . . . . . . * 
+. * . . . . . . 
+. . . * . . . . 
 * . . . . . . . 
 . . . . . . * . 
-. . . * . . . . 
+. . . . * . . . 
+. . * . . . . . 
+. . . . . * . . 
 
 Run: 49
-Runtime in nanoseconds: 1666113
-Found at epoch: 11
-Population size: 352
+Runtime in nanoseconds: 492253
+Found at epoch: 2
+Population size: 96
 
-. . . . . * . . 
-. . * . . . . . 
-. . . . * . . . 
-. . . . . . * . 
-* . . . . . . . 
 . . . * . . . . 
 . * . . . . . . 
+. . . . . . * . 
+. . . . * . . . 
+* . . . . . . . 
 . . . . . . . * 
+. . . . . * . . 
+. . * . . . . . 
 
 Run: 50
-Runtime in nanoseconds: 2623818
-Found at epoch: 18
-Population size: 512
+Runtime in nanoseconds: 65322540
+Found at epoch: 16
+Population size: 514
 
-. . . * . . . . 
-. . . . . . * . 
-. . . . * . . . 
 . * . . . . . . 
 . . . . . * . . 
 * . . . . . . . 
-. . * . . . . . 
+. . . . . . * . 
+. . . * . . . . 
 . . . . . . . * 
+. . * . . . . . 
+. . . . * . . . 
 
 Runtime summary
 
-31678704
-3681668
-11595085
-4422514
-7939158
-990147
-1117441
-12680439
-1611104
-1476404
-916803
-754247
-910104
-1036692
-891062
-4663351
-1392835
-2562463
-456638
-66820455
-801849
-525398
-1733109
-18223920
-970401
-5267736
-1594884
-3548731
-3023333
-4884794
-2653791
-2441163
-1728879
-2918253
-465101
-2016966
-11662082
-1139304
-2192922
-1468648
-1786707
-38234196
-1129430
-8633108
-2335379
-864263
-2840678
-741552
-1666113
-2623818
-1766844480735332
-1766844774433407
-293698075
+817365
+5378458
+1521187
+6899645
+1334300
+945717
+641410
+3132997
+2143908
+471096
+41828414
+7875687
+2834683
+3709877
+2142497
+774346
+4974007
+34094127
+1927048
+2929890
+5542424
+472506
+587812
+1126962
+1700669
+4230339
+1336064
+1998983
+9860213
+26597855
+495073
+5735306
+1687622
+2108646
+1604052
+1375557
+2200327
+806434
+736968
+4396774
+6468042
+1636493
+797971
+4336124
+3431663
+845222
+1293750
+2902386
+492253
+65322540
+1768397472625155
+1768397767097928
+294472773
