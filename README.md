@@ -7,7 +7,7 @@ Team Member - Pratik Mahajan, Mansi Raghuwanshi, Varad Desai
 ## Problem Statement
 <--some text here-->
 
-## Impementation
+## Implementation
 <--some text here-->
 
 ## How to run the project
