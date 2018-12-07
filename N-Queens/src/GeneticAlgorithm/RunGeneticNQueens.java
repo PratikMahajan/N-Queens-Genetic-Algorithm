@@ -48,11 +48,23 @@ public class RunGeneticNQueens {
                 endTime = System.nanoTime();
                 totalTime = endTime - startTime;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+                System.out.println("Done");
+                System.out.println("run "+(i+1));
+            System.out.println("time in nanoseconds: "+totalTime);
+=======
+                    System.out.println("Done");
+                    System.out.println("run "+(i+1));
+            System.out.println("|"+totalTime);
+>>>>>>> b7ec3dd3f988f545b9ea8b4a0d1250656bfe996d
+=======
 
                 System.out.println("Done");
                 System.out.println("run "+(i+1));
             System.out.println("|"+totalTime);
 
+>>>>>>> 97ad7a8fe772122481d7e6c54f532cf92e79e677
             System.out.println("Success!");
 
             runtimes[i] = totalTime;
@@ -66,6 +78,55 @@ public class RunGeneticNQueens {
             logWriter.add((String)("Population size: "+ga.getPopulationSize()));
             logWriter.add("");
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+        for(Chromosome c: ga.getSolutions()) {							
+                                logWriter.add(c);
+                                logWriter.add("");
+                }
+        } else {														
+                fail++;
+                System.out.println("Fail!");
+        }
+
+        if(fail >= 100) {
+                System.out.println("Change Parametres");
+                break;
+        }
+        startTime = 0;												
+        endTime = 0;
+        totalTime = 0;
+    }
+
+        System.out.println("Success: " +success);
+        System.out.println("failures: "+fail);
+        logWriter.add("Runtime summary");
+        logWriter.add("");
+=======
+            for(Chromosome c: ga.getSolutions()) {							
+                                    logWriter.add(c);
+                                    logWriter.add("");
+                    }
+            } else {														
+                    fail++;
+                    //System.out.println("Fail!");
+            }
+
+            if(fail >= 100) {
+                    System.out.println("Change Parametres");
+                    break;
+            }
+            startTime = 0;												
+            endTime = 0;
+            totalTime = 0;
+    }
+
+    System.out.println("Success: " +success+" failures: "+fail);
+    //System.out.println("failures: "+fail);
+    logWriter.add("Runtime summary");
+    logWriter.add("");
+>>>>>>> b7ec3dd3f988f545b9ea8b4a0d1250656bfe996d
+=======
 
             for(Chromosome c: ga.getSolutions()) {							
                                     logWriter.add(c);
@@ -90,6 +151,7 @@ public class RunGeneticNQueens {
     logWriter.add("Runtime summary");
     logWriter.add("");
 
+>>>>>>> 97ad7a8fe772122481d7e6c54f532cf92e79e677
 
                 for(int x = 0; x < runtimes.length; x++){					
                         logWriter.add(Long.toString(runtimes[x]));
@@ -101,10 +163,20 @@ public class RunGeneticNQueens {
                 logWriter.add(Long.toString(testEnd - testStart));
 
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+        logWriter.writeFile(filepath);
+        printRuntimes();
+=======
+    logWriter.writeFile(filepath);
+    //printRuntimes();
+>>>>>>> b7ec3dd3f988f545b9ea8b4a0d1250656bfe996d
+=======
 
     logWriter.writeFile(filepath);
     //printRuntimes();
 
+>>>>>>> 97ad7a8fe772122481d7e6c54f532cf92e79e677
     }
 
 
