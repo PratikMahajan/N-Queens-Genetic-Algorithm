@@ -94,7 +94,7 @@ public class GeneticAlgorithm {
             solutions = new ArrayList<Chromosome>();
             rand = new Random();
          //uncomment only when testing the the mutation and chromosome test    
-         //   rand.setSeed(20);
+            rand.setSeed(20);
             nextMutation = 0;
             childCount = 0;                 
             mutations = 0;
