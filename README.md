@@ -10,6 +10,7 @@ Team Member - Pratik Mahajan, Mansi Raghuwanshi, Varad Desai
 ## Impementation
 <--some text here-->
 
+## How to run the project
 
 ## References
 1. https://developers.google.com/optimization/cp/queens
