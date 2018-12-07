@@ -45,14 +45,29 @@ public class GeneticAlgorithmTest {
        
     }
     
-    @Test
+    //Note the mutation's are randomly generated so in order to test this please uncomment the rand.setSeed() 
+    
+     @Test
     public void testMutation() {
        
         RunGeneticNQueens tester = new RunGeneticNQueens();
             
         tester.test(8, 0.001, 1000);
-        int expResult = 41;
+        int expResult = 40;
         int result = tester.ga.getMutations();
+        
+        assertEquals(expResult, result);
+       
+    }
+    
+    @Test
+    public void testChooseOffspring() {
+       
+        RunGeneticNQueens tester = new RunGeneticNQueens();
+            
+        tester.test(8, 0.001, 1000);
+        int expResult = 678;
+        int result = tester.ga.getChildCount();
         
         assertEquals(expResult, result);
        
