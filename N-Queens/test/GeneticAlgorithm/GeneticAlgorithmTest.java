@@ -46,7 +46,7 @@ public class GeneticAlgorithmTest {
     }
     
     //Note the mutation's are randomly generated so in order to test this please uncomment the rand.setSeed() 
-    
+    //in GeneticAlgorithm.java 
      @Test
     public void testMutation() {
        
