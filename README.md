@@ -9,12 +9,12 @@ In 1848, A German Chess player Max Bezzel composed the 8-Queens Problem which ai
 
 ## How to run the project
 Run the RunGeneticNQueens.java (Main for the program )
-Note the mutation's are randomly generated so in order to test this please uncomment the rand.setSeed() in GeneticAlgorithm.java 
+Note the mutation's are randomly generated so in order to test this please comment the rand.setSeed() in GeneticAlgorithm.java 
 Random.setSeed(20) -- will always generate the same random values and is introduced just for testing the genetic
 algorithm , since otherwise it always generates random population and chromosomes and testing with the random population is very difficult
 
 ## Test cases 
-Random Seed has been set to 20 for testing purpose. Please comment Line 95-96 in GeneticAlgorithm.java to get correct output for main()
+Random Seed has been set to 20 for testing purpose. Please comment Line 95-96-97 in GeneticAlgorithm.java to get correct output for main()
 
 
 #### Read Documentation for In-Depth Analysis
