@@ -93,7 +93,7 @@ public class GeneticAlgorithm {
             population = new ArrayList<Chromosome>();
             solutions = new ArrayList<Chromosome>();
             rand = new Random();
-         //uncomment only when testing the the mutation and chromosome test cases   
+         //uncomment only when testing the the mutation and chromosome test    
          //   rand.setSeed(20);
             nextMutation = 0;
             childCount = 0;                 
@@ -109,7 +109,7 @@ public class GeneticAlgorithm {
 
             while(!stop) {
                     populationSize = population.size();
-
+                    System.out.println("Population Size --> "+ populationSize);
                     for(int i = 0; i < populationSize; i++) {
                             chromo = population.get(i);
                             if((chromo.getConflicts() == 0)) {			//if solution found
@@ -137,9 +137,7 @@ public class GeneticAlgorithm {
                     System.out.println("No solution found");
                     stop = false;
             } else {
-                    populationSize = population.size();	
-                    //prints the solutions if found within mnc
-                    
+                    populationSize = population.size();					//prints the solutions if found within mnc
                     for(int i = 0; i < populationSize; i++) {
                             chromo = population.get(i);
                             if(chromo.getConflicts() == 0) {
