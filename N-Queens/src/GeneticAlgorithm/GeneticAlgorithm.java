@@ -137,7 +137,9 @@ public class GeneticAlgorithm {
                     System.out.println("No solution found");
                     stop = false;
             } else {
-                    populationSize = population.size();					//prints the solutions if found within mnc
+                    populationSize = population.size();	
+                    //prints the solutions if found within mnc
+                    
                     for(int i = 0; i < populationSize; i++) {
                             chromo = population.get(i);
                             if(chromo.getConflicts() == 0) {
