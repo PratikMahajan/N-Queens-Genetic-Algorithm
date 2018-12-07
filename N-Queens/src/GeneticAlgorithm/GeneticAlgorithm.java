@@ -93,6 +93,8 @@ public class GeneticAlgorithm {
             population = new ArrayList<Chromosome>();
             solutions = new ArrayList<Chromosome>();
             rand = new Random();
+         //uncomment only when testing the the mutation and chromosome test    
+         //   rand.setSeed(20);
             nextMutation = 0;
             childCount = 0;                 
             mutations = 0;
@@ -107,7 +109,7 @@ public class GeneticAlgorithm {
 
             while(!stop) {
                     populationSize = population.size();
-
+                    System.out.println("Population Size --> "+ populationSize);
                     for(int i = 0; i < populationSize; i++) {
                             chromo = population.get(i);
                             if((chromo.getConflicts() == 0)) {			//if solution found
@@ -128,7 +130,7 @@ public class GeneticAlgorithm {
                     resetSelection();
 
                     epoch++;
-                    System.out.println("Epoch: " + epoch);
+                   // System.out.println("Epoch: " + epoch);
             }
 
             if(epoch >= MAX_EPOCHS) {
@@ -145,7 +147,7 @@ public class GeneticAlgorithm {
                     }
             }
             System.out.println("Completed");
-            System.out.println(mutations + " mutations in " + childCount + " offspring."); 
+            System.out.print("Mutations: " +mutations + "OffSprings: " + childCount); 
 
             return stop;
 

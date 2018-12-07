@@ -7,10 +7,16 @@ Team Member - Pratik Mahajan, Mansi Raghuwanshi, Varad Desai
 ## Problem Statement
 <--some text here-->
 
-## Impementation
+## Implementation
 <--some text here-->
 
+## How to run the project
+Run the RunGeneticNQueens.java (Main for the program )
+Note the mutation's are randomly generated so in order to test this please uncomment the rand.setSeed() in GeneticAlgorithm.java 
+Random.setSeed(20) -- will always generate the same random values and is introduced just for testing the genetic
+algorithm , since otherwise it always generates random population and chromosomes and testing with the random population is very difficult
 
+To run the test cases 
 ## References
 1. https://developers.google.com/optimization/cp/queens
 2. https://www.geeksforgeeks.org/n-queen-problem-backtracking-3/
